@@ -1,0 +1,722 @@
+INFO _internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:96 [33mPress CTRL+C to quit[0m
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 16:55:07] "[33mGET / HTTP/1.1[0m" 404 -
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 16:55:07] "[33mGET / HTTP/1.1[0m" 404 -
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 16:55:15] "[33mGET / HTTP/1.1[0m" 404 -
+ERROR app.py:825 Exception on /login/ [GET]
+Traceback (most recent call last):
+  File "C:\Users\Ty丶云轩青苔\Envs\flaskdemo\lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Ty丶云轩青苔\Envs\flaskdemo\lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\Ty丶云轩青苔\Envs\flaskdemo\lib\site-packages\flask_restful\__init__.py", line 489, in wrapper
+    resp = resource(*args, **kwargs)
+  File "C:\Users\Ty丶云轩青苔\Envs\flaskdemo\lib\site-packages\flask\views.py", line 109, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "C:\Users\Ty丶云轩青苔\Envs\flaskdemo\lib\site-packages\flask_restful\__init__.py", line 601, in dispatch_request
+    for decorator in decorators:
+TypeError: 'marshal_with' object is not iterable
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 16:55:27] "[35m[1mGET /login/ HTTP/1.1[0m" 500 -
+ERROR app.py:825 Exception on /login/ [GET]
+Traceback (most recent call last):
+  File "C:\Users\Ty丶云轩青苔\Envs\flaskdemo\lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Ty丶云轩青苔\Envs\flaskdemo\lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\Ty丶云轩青苔\Envs\flaskdemo\lib\site-packages\flask_restful\__init__.py", line 489, in wrapper
+    resp = resource(*args, **kwargs)
+  File "C:\Users\Ty丶云轩青苔\Envs\flaskdemo\lib\site-packages\flask\views.py", line 109, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "C:\Users\Ty丶云轩青苔\Envs\flaskdemo\lib\site-packages\flask_restful\__init__.py", line 601, in dispatch_request
+    for decorator in decorators:
+TypeError: 'marshal_with' object is not iterable
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 16:55:30] "[35m[1mGET /login/ HTTP/1.1[0m" 500 -
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 16:55:48] "[33mGET /get/abc/ HTTP/1.1[0m" 404 -
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 16:55:50] "[33mGET /get/abc/ HTTP/1.1[0m" 404 -
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 16:56:25] "[32mGET //login HTTP/1.1[0m" 308 -
+ERROR app.py:825 Exception on /login/ [GET]
+Traceback (most recent call last):
+  File "C:\Users\Ty丶云轩青苔\Envs\flaskdemo\lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Ty丶云轩青苔\Envs\flaskdemo\lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\Ty丶云轩青苔\Envs\flaskdemo\lib\site-packages\flask_restful\__init__.py", line 489, in wrapper
+    resp = resource(*args, **kwargs)
+  File "C:\Users\Ty丶云轩青苔\Envs\flaskdemo\lib\site-packages\flask\views.py", line 109, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "C:\Users\Ty丶云轩青苔\Envs\flaskdemo\lib\site-packages\flask_restful\__init__.py", line 601, in dispatch_request
+    for decorator in decorators:
+TypeError: 'marshal_with' object is not iterable
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 16:56:25] "[35m[1mGET /login/ HTTP/1.1[0m" 500 -
+INFO _internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:96 [33mPress CTRL+C to quit[0m
+ERROR app.py:825 Exception on /login/ [GET]
+Traceback (most recent call last):
+  File "C:\Users\Ty丶云轩青苔\Envs\flaskdemo\lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Ty丶云轩青苔\Envs\flaskdemo\lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\Ty丶云轩青苔\Envs\flaskdemo\lib\site-packages\flask_restful\__init__.py", line 489, in wrapper
+    resp = resource(*args, **kwargs)
+  File "C:\Users\Ty丶云轩青苔\Envs\flaskdemo\lib\site-packages\flask\views.py", line 109, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "C:\Users\Ty丶云轩青苔\Envs\flaskdemo\lib\site-packages\flask_restful\__init__.py", line 601, in dispatch_request
+    for decorator in decorators:
+TypeError: 'marshal_with' object is not iterable
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 16:58:52] "[35m[1mGET /login/ HTTP/1.1[0m" 500 -
+ERROR app.py:825 Exception on /login/ [GET]
+Traceback (most recent call last):
+  File "C:\Users\Ty丶云轩青苔\Envs\flaskdemo\lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Ty丶云轩青苔\Envs\flaskdemo\lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\Ty丶云轩青苔\Envs\flaskdemo\lib\site-packages\flask_restful\__init__.py", line 489, in wrapper
+    resp = resource(*args, **kwargs)
+  File "C:\Users\Ty丶云轩青苔\Envs\flaskdemo\lib\site-packages\flask\views.py", line 109, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "C:\Users\Ty丶云轩青苔\Envs\flaskdemo\lib\site-packages\flask_restful\__init__.py", line 601, in dispatch_request
+    for decorator in decorators:
+TypeError: 'marshal_with' object is not iterable
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 16:58:58] "[35m[1mGET //login/ HTTP/1.1[0m" 500 -
+ERROR app.py:825 Exception on /login/ [GET]
+Traceback (most recent call last):
+  File "C:\Users\Ty丶云轩青苔\Envs\flaskdemo\lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Ty丶云轩青苔\Envs\flaskdemo\lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\Ty丶云轩青苔\Envs\flaskdemo\lib\site-packages\flask_restful\__init__.py", line 489, in wrapper
+    resp = resource(*args, **kwargs)
+  File "C:\Users\Ty丶云轩青苔\Envs\flaskdemo\lib\site-packages\flask\views.py", line 109, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "C:\Users\Ty丶云轩青苔\Envs\flaskdemo\lib\site-packages\flask_restful\__init__.py", line 601, in dispatch_request
+    for decorator in decorators:
+TypeError: 'marshal_with' object is not iterable
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 16:59:00] "[35m[1mGET //login/ HTTP/1.1[0m" 500 -
+ERROR app.py:825 Exception on /login/ [GET]
+Traceback (most recent call last):
+  File "C:\Users\Ty丶云轩青苔\Envs\flaskdemo\lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Ty丶云轩青苔\Envs\flaskdemo\lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\Ty丶云轩青苔\Envs\flaskdemo\lib\site-packages\flask_restful\__init__.py", line 489, in wrapper
+    resp = resource(*args, **kwargs)
+  File "C:\Users\Ty丶云轩青苔\Envs\flaskdemo\lib\site-packages\flask\views.py", line 109, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "C:\Users\Ty丶云轩青苔\Envs\flaskdemo\lib\site-packages\flask_restful\__init__.py", line 601, in dispatch_request
+    for decorator in decorators:
+TypeError: 'marshal_with' object is not iterable
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 16:59:03] "[35m[1mGET //login/ HTTP/1.1[0m" 500 -
+INFO _internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:96 [33mPress CTRL+C to quit[0m
+ERROR app.py:825 Exception on /login/ [GET]
+Traceback (most recent call last):
+  File "C:\Users\Ty丶云轩青苔\Envs\flaskdemo\lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Ty丶云轩青苔\Envs\flaskdemo\lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\Ty丶云轩青苔\Envs\flaskdemo\lib\site-packages\flask_restful\__init__.py", line 489, in wrapper
+    resp = resource(*args, **kwargs)
+  File "C:\Users\Ty丶云轩青苔\Envs\flaskdemo\lib\site-packages\flask\views.py", line 109, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "C:\Users\Ty丶云轩青苔\Envs\flaskdemo\lib\site-packages\flask_restful\__init__.py", line 601, in dispatch_request
+    for decorator in decorators:
+TypeError: 'marshal_with' object is not iterable
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 17:01:36] "[35m[1mGET //login/ HTTP/1.1[0m" 500 -
+ERROR app.py:825 Exception on /login/ [GET]
+Traceback (most recent call last):
+  File "C:\Users\Ty丶云轩青苔\Envs\flaskdemo\lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Ty丶云轩青苔\Envs\flaskdemo\lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\Ty丶云轩青苔\Envs\flaskdemo\lib\site-packages\flask_restful\__init__.py", line 489, in wrapper
+    resp = resource(*args, **kwargs)
+  File "C:\Users\Ty丶云轩青苔\Envs\flaskdemo\lib\site-packages\flask\views.py", line 109, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "C:\Users\Ty丶云轩青苔\Envs\flaskdemo\lib\site-packages\flask_restful\__init__.py", line 601, in dispatch_request
+    for decorator in decorators:
+TypeError: 'marshal_with' object is not iterable
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 17:01:36] "[35m[1mGET //login/ HTTP/1.1[0m" 500 -
+INFO _internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:96 [33mPress CTRL+C to quit[0m
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 17:04:57] "[33mGET / HTTP/1.1[0m" 404 -
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 17:04:57] "[33mGET / HTTP/1.1[0m" 404 -
+ERROR app.py:825 Exception on /login/ [GET]
+Traceback (most recent call last):
+  File "C:\Users\Ty丶云轩青苔\Envs\flaskdemo\lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Ty丶云轩青苔\Envs\flaskdemo\lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\Ty丶云轩青苔\Envs\flaskdemo\lib\site-packages\flask_restful\__init__.py", line 489, in wrapper
+    resp = resource(*args, **kwargs)
+  File "C:\Users\Ty丶云轩青苔\Envs\flaskdemo\lib\site-packages\flask\views.py", line 109, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "C:\Users\Ty丶云轩青苔\Envs\flaskdemo\lib\site-packages\flask_restful\__init__.py", line 601, in dispatch_request
+    for decorator in decorators:
+TypeError: 'marshal_with' object is not iterable
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 17:05:01] "[35m[1mGET //login/ HTTP/1.1[0m" 500 -
+ERROR app.py:825 Exception on /login/ [GET]
+Traceback (most recent call last):
+  File "C:\Users\Ty丶云轩青苔\Envs\flaskdemo\lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Ty丶云轩青苔\Envs\flaskdemo\lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\Ty丶云轩青苔\Envs\flaskdemo\lib\site-packages\flask_restful\__init__.py", line 489, in wrapper
+    resp = resource(*args, **kwargs)
+  File "C:\Users\Ty丶云轩青苔\Envs\flaskdemo\lib\site-packages\flask\views.py", line 109, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "C:\Users\Ty丶云轩青苔\Envs\flaskdemo\lib\site-packages\flask_restful\__init__.py", line 601, in dispatch_request
+    for decorator in decorators:
+TypeError: 'marshal_with' object is not iterable
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 17:05:02] "[35m[1mGET //login/ HTTP/1.1[0m" 500 -
+INFO _internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:96 [33mPress CTRL+C to quit[0m
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 17:06:52] "[33mGET / HTTP/1.1[0m" 404 -
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 17:06:52] "[33mGET / HTTP/1.1[0m" 404 -
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 17:07:01] "[35m[1mGET /login/ HTTP/1.1[0m" 500 -
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 17:07:01] "GET /login/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 17:07:01] "GET /login/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 17:07:01] "GET /login/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 17:07:02] "[36mGET /login/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 17:07:14] "[35m[1mGET //login/ HTTP/1.1[0m" 500 -
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 17:07:14] "GET //login/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 17:07:14] "GET //login/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 17:07:14] "GET //login/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 17:07:14] "[36mGET //login/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO _internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:96 [33mPress CTRL+C to quit[0m
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 17:12:23] "[33mGET / HTTP/1.1[0m" 404 -
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 17:12:23] "[33mGET / HTTP/1.1[0m" 404 -
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 17:12:38] "[33mGET / HTTP/1.1[0m" 404 -
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 17:12:46] "[35m[1mGET /login/ HTTP/1.1[0m" 500 -
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 17:12:47] "[36mGET /login/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 17:12:47] "[36mGET /login/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 17:12:47] "[36mGET /login/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO _internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:96 [33mPress CTRL+C to quit[0m
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 17:14:21] "[33mGET / HTTP/1.1[0m" 404 -
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 17:14:21] "[33mGET / HTTP/1.1[0m" 404 -
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 17:14:26] "[32mGET /login HTTP/1.1[0m" 308 -
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 17:14:26] "GET /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:96 [33mPress CTRL+C to quit[0m
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 17:15:26] "[35m[1mGET /login/ HTTP/1.1[0m" 500 -
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 17:15:26] "[36mGET /login/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 17:15:26] "[36mGET /login/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 17:15:26] "[36mGET /login/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 17:15:27] "[36mGET /login/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 17:15:28] "[35m[1mGET /login/ HTTP/1.1[0m" 500 -
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 17:15:29] "[36mGET /login/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 17:15:29] "[36mGET /login/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 17:15:29] "[36mGET /login/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 17:15:29] "[36mGET /login/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO _internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:96 [33mPress CTRL+C to quit[0m
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 17:16:21] "GET /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:96 [33mPress CTRL+C to quit[0m
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 17:16:37] "[35m[1mGET /login/ HTTP/1.1[0m" 500 -
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 17:16:38] "[36mGET /login/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 17:16:38] "[36mGET /login/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 17:16:38] "[36mGET /login/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 17:16:38] "[36mGET /login/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO _internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:96 [33mPress CTRL+C to quit[0m
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 17:17:44] "[35m[1mGET /login/ HTTP/1.1[0m" 500 -
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 17:17:45] "[36mGET /login/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 17:17:45] "[36mGET /login/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 17:17:45] "[36mGET /login/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 17:17:45] "[36mGET /login/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO _internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:96 [33mPress CTRL+C to quit[0m
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 17:18:53] "GET /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:96 [33mPress CTRL+C to quit[0m
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:96 [33mPress CTRL+C to quit[0m
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 17:55:58] "[35m[1mGET /user/ HTTP/1.1[0m" 500 -
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 17:55:58] "GET /user/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 17:55:58] "GET /user/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 17:55:58] "GET /user/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 17:55:58] "[36mGET /user/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO _internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:96 [33mPress CTRL+C to quit[0m
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 17:58:15] "[35m[1mGET /user/ HTTP/1.1[0m" 500 -
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 17:58:16] "[36mGET /user/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 17:58:16] "[36mGET /user/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 17:58:16] "[36mGET /user/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 17:58:16] "[36mGET /user/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO _internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:96 [33mPress CTRL+C to quit[0m
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 17:59:28] "GET /user/ HTTP/1.1" 200 -
+INFO _internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:96 [33mPress CTRL+C to quit[0m
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 18:03:42] "GET /user/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 18:03:44] "GET /user/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 18:03:46] "GET /user/ HTTP/1.1" 200 -
+INFO _internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:96 [33mPress CTRL+C to quit[0m
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 18:04:01] "GET /user/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 18:04:03] "GET /user/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 18:04:04] "GET /user/ HTTP/1.1" 200 -
+INFO _internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:96 [33mPress CTRL+C to quit[0m
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 18:04:36] "[33mGET / HTTP/1.1[0m" 404 -
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 18:04:36] "[33mGET / HTTP/1.1[0m" 404 -
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 18:04:49] "GET /user/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 18:04:50] "GET /user/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 18:04:51] "GET /user/ HTTP/1.1" 200 -
+INFO _internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:96 [33mPress CTRL+C to quit[0m
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 18:07:20] "GET /user/ HTTP/1.1" 200 -
+INFO _internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:96 [33mPress CTRL+C to quit[0m
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 18:10:19] "GET /user/ HTTP/1.1" 200 -
+INFO _internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:96 [33mPress CTRL+C to quit[0m
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 18:44:53] "GET /user/ HTTP/1.1" 200 -
+INFO _internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:96 [33mPress CTRL+C to quit[0m
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 20:25:39] "[33mGET / HTTP/1.1[0m" 404 -
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 20:25:39] "[33mGET / HTTP/1.1[0m" 404 -
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 20:25:39] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 20:25:39] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 20:25:51] "GET /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 20:26:08] "[33mGET /usear/ HTTP/1.1[0m" 404 -
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 20:26:20] "GET /user/ HTTP/1.1" 200 -
+INFO _internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:96 [33mPress CTRL+C to quit[0m
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [14/Dec/2023 20:26:52] "GET /user/ HTTP/1.1" 200 -
+INFO _internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:96 [33mPress CTRL+C to quit[0m
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 10:39:31] "[35m[1mPOST /login/ HTTP/1.1[0m" 500 -
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 10:43:47] "[33mGET / HTTP/1.1[0m" 404 -
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 10:43:47] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 10:43:53] "[32mGET /user HTTP/1.1[0m" 308 -
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 10:43:53] "GET /user/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 10:44:01] "[32mGET /login HTTP/1.1[0m" 308 -
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 10:44:01] "GET /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 10:44:25] "[35m[1mPOST /login/ HTTP/1.1[0m" 500 -
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 10:44:59] "GET /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:96 [33mPress CTRL+C to quit[0m
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 10:55:50] "GET /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 10:56:18] "[35m[1mPOST /login/ HTTP/1.1[0m" 500 -
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 10:57:02] "GET /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 10:57:07] "[35m[1mPOST /login/ HTTP/1.1[0m" 500 -
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 10:57:30] "[35m[1mPOST /login/ HTTP/1.1[0m" 500 -
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 10:58:51] "[35m[1mPOST /login/ HTTP/1.1[0m" 500 -
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 11:01:50] "[33mGET / HTTP/1.1[0m" 404 -
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 11:01:50] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 11:01:59] "[32mGET /login HTTP/1.1[0m" 308 -
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 11:01:59] "GET /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 11:02:08] "[33mGET /uesr/ HTTP/1.1[0m" 404 -
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 11:02:24] "[31m[1mGET /register/ HTTP/1.1[0m" 401 -
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 11:02:37] "GET /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:96 [33mPress CTRL+C to quit[0m
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 11:04:17] "GET /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 11:04:29] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 11:04:38] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:96 [33mPress CTRL+C to quit[0m
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 11:06:38] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\api\\auth.py', reloading
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:96 [33mPress CTRL+C to quit[0m
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 11:07:57] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\api\\auth.py', reloading
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:96 [33mPress CTRL+C to quit[0m
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 11:10:59] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:96 [33mPress CTRL+C to quit[0m
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:96 [33mPress CTRL+C to quit[0m
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:96 [33mPress CTRL+C to quit[0m
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 13:19:33] "[33mGET / HTTP/1.1[0m" 404 -
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 13:19:33] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 13:19:43] "GET /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:96 [33mPress CTRL+C to quit[0m
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:96 [33mPress CTRL+C to quit[0m
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:96 [33mPress CTRL+C to quit[0m
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 14:16:49] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 14:18:35] "[33mGET / HTTP/1.1[0m" 404 -
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 14:18:40] "GET /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 14:20:46] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 14:20:54] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:96 [33mPress CTRL+C to quit[0m
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 14:21:13] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 14:21:21] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 14:23:17] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 14:23:54] "GET /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 14:24:04] "GET /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 14:24:08] "GET /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 14:25:04] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:96 [33mPress CTRL+C to quit[0m
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 14:25:21] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 14:28:02] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 14:35:20] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 14:35:46] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 14:37:10] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 14:37:42] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 14:38:29] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 14:38:36] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 14:49:07] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 14:51:17] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:96 [33mPress CTRL+C to quit[0m
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 14:52:26] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 14:52:32] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:96 [33mPress CTRL+C to quit[0m
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 14:54:26] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:96 [33mPress CTRL+C to quit[0m
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 14:55:17] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 14:55:46] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 14:55:59] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 14:56:09] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:96 [33mPress CTRL+C to quit[0m
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 14:58:26] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:96 [33mPress CTRL+C to quit[0m
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 15:03:58] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 15:04:23] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 15:10:25] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 15:15:57] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 15:15:59] "GET /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 15:16:17] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:96 [33mPress CTRL+C to quit[0m
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 15:17:48] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 15:18:32] "[31m[1mPOST /login/ HTTP/1.1[0m" 415 -
+INFO _internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:96 [33mPress CTRL+C to quit[0m
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 15:20:31] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:96 [33mPress CTRL+C to quit[0m
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 15:24:01] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 15:27:15] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 15:27:16] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 15:28:46] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 15:29:00] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 15:29:11] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 15:29:45] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:96 [33mPress CTRL+C to quit[0m
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 15:36:54] "OPTIONS /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 15:37:18] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 15:40:09] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 15:43:34] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:96 [33mPress CTRL+C to quit[0m
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 16:24:27] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 16:24:34] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 16:24:45] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:96 [33mPress CTRL+C to quit[0m
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 16:30:12] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 16:30:40] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 16:31:32] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [15/Dec/2023 16:31:39] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:96 [33mPress CTRL+C to quit[0m
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 854-818-524
+INFO _internal.py:96 127.0.0.1 - - [18/Dec/2023 10:24:48] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [18/Dec/2023 10:25:37] "[31m[1mPOST /login/ HTTP/1.1[0m" 400 -
+INFO _internal.py:96 127.0.0.1 - - [18/Dec/2023 10:27:13] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\exts.py', reloading
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 854-818-524
+INFO _internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:96 [33mPress CTRL+C to quit[0m
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 854-818-524
+INFO _internal.py:96 127.0.0.1 - - [18/Dec/2023 11:44:54] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [18/Dec/2023 13:51:51] "[35m[1mPOST /login/ HTTP/1.1[0m" 500 -
+INFO _internal.py:96 127.0.0.1 - - [18/Dec/2023 14:19:29] "[35m[1mPOST /login/ HTTP/1.1[0m" 500 -
+INFO _internal.py:96 127.0.0.1 - - [18/Dec/2023 14:35:31] "[35m[1mPOST /login/ HTTP/1.1[0m" 500 -
+INFO _internal.py:96 127.0.0.1 - - [18/Dec/2023 14:35:33] "[35m[1mPOST /login/ HTTP/1.1[0m" 500 -
+INFO _internal.py:96 127.0.0.1 - - [18/Dec/2023 14:35:33] "[35m[1mPOST /login/ HTTP/1.1[0m" 500 -
+INFO _internal.py:96 127.0.0.1 - - [18/Dec/2023 14:35:34] "[35m[1mPOST /login/ HTTP/1.1[0m" 500 -
+INFO _internal.py:96 127.0.0.1 - - [18/Dec/2023 14:35:35] "[35m[1mPOST /login/ HTTP/1.1[0m" 500 -
+INFO _internal.py:96 127.0.0.1 - - [18/Dec/2023 14:35:36] "[35m[1mPOST /login/ HTTP/1.1[0m" 500 -
+INFO _internal.py:96 127.0.0.1 - - [18/Dec/2023 14:35:37] "[35m[1mPOST /login/ HTTP/1.1[0m" 500 -
+INFO _internal.py:96 127.0.0.1 - - [18/Dec/2023 14:35:38] "[35m[1mPOST /login/ HTTP/1.1[0m" 500 -
+INFO _internal.py:96 127.0.0.1 - - [18/Dec/2023 14:44:43] "[35m[1mPOST /login/ HTTP/1.1[0m" 500 -
+INFO _internal.py:96 127.0.0.1 - - [18/Dec/2023 15:50:17] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [18/Dec/2023 15:50:29] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [18/Dec/2023 15:50:45] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [18/Dec/2023 15:53:08] "[35m[1mPOST /login/ HTTP/1.1[0m" 500 -
+INFO _internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:96 [33mPress CTRL+C to quit[0m
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 854-818-524
+INFO _internal.py:96 127.0.0.1 - - [18/Dec/2023 17:27:48] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [18/Dec/2023 17:28:49] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:96 [33mPress CTRL+C to quit[0m
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 854-818-524
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\api\\auth.py', reloading
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 854-818-524
+INFO _internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:96 [33mPress CTRL+C to quit[0m
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 854-818-524
+INFO _internal.py:96 127.0.0.1 - - [18/Dec/2023 17:58:35] "[31m[1mGET /register/ HTTP/1.1[0m" 401 -
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\api\\auth.py', reloading
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 854-818-524
+INFO _internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:96 [33mPress CTRL+C to quit[0m
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 854-818-524
+INFO _internal.py:96 127.0.0.1 - - [18/Dec/2023 17:59:50] "[35m[1mGET /register/ HTTP/1.1[0m" 500 -
+INFO _internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:96 [33mPress CTRL+C to quit[0m
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 854-818-524
+INFO _internal.py:96 127.0.0.1 - - [18/Dec/2023 18:00:28] "POST /register/ HTTP/1.1" 200 -
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\api\\auth.py', reloading
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 854-818-524
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\api\\auth.py', reloading
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 854-818-524
+INFO _internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:96 [33mPress CTRL+C to quit[0m
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 854-818-524
+INFO _internal.py:96 127.0.0.1 - - [18/Dec/2023 18:10:34] "POST /register/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [18/Dec/2023 18:33:39] "POST /register/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [18/Dec/2023 18:34:31] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [18/Dec/2023 18:36:09] "POST /register/ HTTP/1.1" 200 -
+INFO _internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:96 [33mPress CTRL+C to quit[0m
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 854-818-524
+INFO _internal.py:96 127.0.0.1 - - [18/Dec/2023 19:04:13] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [18/Dec/2023 19:04:33] "POST /register/ HTTP/1.1" 200 -
