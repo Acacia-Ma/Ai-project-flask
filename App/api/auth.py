@@ -23,7 +23,7 @@ class Login(Resource):
         # 判断用户名和密码是否为空
         print(username,password)
         if username is None or password is None:
-            return {"msg":"拒绝登录！"}
+            return {"msg":"拒绝登录！", "code": 400}
         user = User.query.filter(User.username==username).first()
         print(user.username,user.password)
         # if check_password_hash(password,user.password):
@@ -34,17 +34,18 @@ class Login(Resource):
             access_token = create_access_token(identity=username)
             refresh_token = create_refresh_token(identity=username)
             return {"msg":"Success Login","access_token":access_token,"refresh_token":refresh_token,"code":0}
-        return {"msg":"拒绝登录！"}
+        return {"msg":"拒绝登录！", "code": 400}
     # @marshal_with(res)
     def get(self):
         return {"msg":"Success Login","code":200}
 
 
 class Register(Resource):
-
     def get(self):
         payload = get_jwt_identity()
-        return "注册成功"
+        return {"msg":"注册成功","code":200,"payload":payload}
+
+    # 注册
     def post(self):
         form_data = request.json
         username = form_data.get('username')

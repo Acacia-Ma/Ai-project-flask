@@ -720,3 +720,37 @@ WARNING _internal.py:96  * Debugger is active!
 INFO _internal.py:96  * Debugger PIN: 854-818-524
 INFO _internal.py:96 127.0.0.1 - - [18/Dec/2023 19:04:13] "POST /login/ HTTP/1.1" 200 -
 INFO _internal.py:96 127.0.0.1 - - [18/Dec/2023 19:04:33] "POST /register/ HTTP/1.1" 200 -
+INFO _internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:96 [33mPress CTRL+C to quit[0m
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 854-818-524
+INFO _internal.py:96 127.0.0.1 - - [18/Dec/2023 19:38:35] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [18/Dec/2023 19:44:17] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\api\\auth.py', reloading
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 854-818-524
+INFO _internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:96 [33mPress CTRL+C to quit[0m
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 854-818-524
+INFO _internal.py:96 127.0.0.1 - - [18/Dec/2023 20:24:48] "POST /register/ HTTP/1.1" 200 -
+INFO _internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:96 [33mPress CTRL+C to quit[0m
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 854-818-524
+INFO _internal.py:96 127.0.0.1 - - [18/Dec/2023 20:34:31] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:96 [33mPress CTRL+C to quit[0m
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 854-818-524
+INFO _internal.py:96 127.0.0.1 - - [18/Dec/2023 21:25:42] "POST /register/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [18/Dec/2023 21:25:49] "POST /login/ HTTP/1.1" 200 -
