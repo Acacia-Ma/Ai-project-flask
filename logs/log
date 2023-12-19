@@ -754,3 +754,15 @@ WARNING _internal.py:96  * Debugger is active!
 INFO _internal.py:96  * Debugger PIN: 854-818-524
 INFO _internal.py:96 127.0.0.1 - - [18/Dec/2023 21:25:42] "POST /register/ HTTP/1.1" 200 -
 INFO _internal.py:96 127.0.0.1 - - [18/Dec/2023 21:25:49] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:96 [33mPress CTRL+C to quit[0m
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [19/Dec/2023 13:19:43] "[35m[1mPOST /login/ HTTP/1.1[0m" 500 -
+INFO _internal.py:96 127.0.0.1 - - [19/Dec/2023 13:19:50] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [19/Dec/2023 13:20:01] "POST /register/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [19/Dec/2023 13:22:57] "POST /register/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [19/Dec/2023 13:23:03] "POST /register/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [19/Dec/2023 13:23:13] "POST /login/ HTTP/1.1" 200 -
