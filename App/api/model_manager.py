@@ -1,7 +1,8 @@
 from flask import request, jsonify
 from flask_restful import Resource
+from datetime import datetime
 from App.api import SparkApi  # 引入之前提供的SparkApi模块
-
+from App.models import *
 # 全局变量，存储星火大模型的密钥信息和地址
 APPID = "fd0f6084"
 API_SECRET = "MGY1NjdhYzExNmIwMGEzZWIwNWU1NjJi"
@@ -47,5 +48,60 @@ class Chat(Resource):
         # 获取并记录助手的回答
         self.getText("assistant", SparkApi.answer)
 
-        # 返回聊天模型的回答
-        return jsonify({"response": SparkApi.answer})
+        # 返回状态码和模型回答
+        return {"code": 0, "msg": "成功", "data": {"response": SparkApi.answer}}
+
+
+class ChatSessionResource(Resource):
+    # 获取所有聊天会话
+    def get(self):
+        sessions = ChatItemsModel.query.all()
+        session_data = [{
+            'id': session.id,
+            'chat_id': session.chat_id,
+            'username': session.username,
+            'model_id': session.model_id,
+            'title': session.title,
+            'updated_at': ChatHistoryModel.query.filter_by(chat_id=session.chat_id).order_by(ChatHistoryModel.updated_at.desc()).first().updated_at if ChatHistoryModel.query.filter_by(chat_id=session.chat_id).first() else None
+        } for session in sessions]
+        return jsonify(session_data)
+
+    # 创建新聊天会话
+    def post(self):
+        data = request.json
+        new_session = ChatItemsModel(
+            chat_id=data['chat_id'],
+            username=data['username'],
+            model_id=data.get('model_id'),
+            title=data.get('title')
+        )
+        db.session.add(new_session)
+        db.session.commit()
+        return {'msg': '会话创建成功', 'id': new_session.id}, 201
+
+    # 删除聊天会话
+    def delete(self, chat_id):
+        session = ChatItemsModel.query.filter_by(chat_id=chat_id).first()
+        if session:
+            db.session.delete(session)
+            db.session.commit()
+            return {'msg': '会话删除成功'}, 200
+        return {'msg': '会话未找到'}, 404
+
+class ChatHistoryResource(Resource):
+    # 保存聊天记录
+    def post(self, chat_id):
+        data = request.json
+        new_history = ChatHistoryModel(
+            chat_id=chat_id,
+            username=data['username'],
+            type=data['type'],
+            Content=data['content'],
+            created_at=datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+            updated_at=datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        )
+        db.session.add(new_history)
+        db.session.commit()
+        return {'msg': '聊天记录保存成功', 'id': new_history.id}, 201
+
+
