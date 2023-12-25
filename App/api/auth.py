@@ -33,7 +33,7 @@ class Login(Resource):
         if username == user.username and password == user.password:
             access_token = create_access_token(identity=username)
             refresh_token = create_refresh_token(identity=username)
-            return {'code': 0, 'msg': '登录成功', 'data': {'access_token': access_token, 'refresh_token': refresh_token}}
+            return {'code': 0, 'msg': '登录成功', 'data': {'access_token': access_token, 'refresh_token': refresh_token, 'username': username}}
         return {"msg":"拒绝登录！", "code": 400}
     # @marshal_with(res)
     def get(self):

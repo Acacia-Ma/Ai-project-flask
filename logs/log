@@ -1261,3 +1261,763 @@ INFO _internal.py:96 127.0.0.1 - - [24/Dec/2023 21:30:13] "GET /chatsessions/ HT
 INFO _internal.py:96 127.0.0.1 - - [24/Dec/2023 21:30:16] "GET /chatsessions/ HTTP/1.1" 200 -
 INFO _internal.py:96 127.0.0.1 - - [24/Dec/2023 21:31:24] "POST /chat/ HTTP/1.1" 200 -
 INFO _internal.py:96 127.0.0.1 - - [24/Dec/2023 21:31:30] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:96 [33mPress CTRL+C to quit[0m
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [24/Dec/2023 22:43:46] "[33mGET /Chat/chatsessions/ HTTP/1.1[0m" 404 -
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\api\\model_manager.py', reloading
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [24/Dec/2023 22:44:40] "[33mGET /Chat/chatsessions/ HTTP/1.1[0m" 404 -
+INFO _internal.py:96 127.0.0.1 - - [24/Dec/2023 22:44:47] "[33mGET /Chat/chatsessions/ HTTP/1.1[0m" 404 -
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\api\\model_manager.py', reloading
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\api\\model_manager.py', reloading
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [24/Dec/2023 22:46:03] "[33mGET /Chat/chatsessions/ HTTP/1.1[0m" 404 -
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\api\\model_manager.py', reloading
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [24/Dec/2023 22:47:13] "[33mGET /Chat/chatsessions/ HTTP/1.1[0m" 404 -
+INFO _internal.py:96 127.0.0.1 - - [24/Dec/2023 22:47:48] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [24/Dec/2023 22:55:20] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [24/Dec/2023 22:55:23] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [24/Dec/2023 22:55:26] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [24/Dec/2023 22:57:37] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [24/Dec/2023 22:57:48] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [24/Dec/2023 22:57:58] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [24/Dec/2023 22:58:26] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [24/Dec/2023 22:58:32] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [24/Dec/2023 22:59:27] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [24/Dec/2023 22:59:29] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [24/Dec/2023 22:59:31] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [24/Dec/2023 22:59:36] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [24/Dec/2023 22:59:40] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [24/Dec/2023 22:59:44] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [24/Dec/2023 22:59:49] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [24/Dec/2023 23:00:08] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [24/Dec/2023 23:00:10] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [24/Dec/2023 23:00:11] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [24/Dec/2023 23:00:19] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [24/Dec/2023 23:03:41] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [24/Dec/2023 23:03:46] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [24/Dec/2023 23:10:01] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [24/Dec/2023 23:10:08] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [24/Dec/2023 23:10:51] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [24/Dec/2023 23:11:12] "POST /chat/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [24/Dec/2023 23:14:06] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [24/Dec/2023 23:14:13] "[33mDELETE /chatsession/1 HTTP/1.1[0m" 404 -
+INFO _internal.py:96 127.0.0.1 - - [24/Dec/2023 23:14:16] "[33mDELETE /chatsession/1 HTTP/1.1[0m" 404 -
+INFO _internal.py:96 127.0.0.1 - - [24/Dec/2023 23:14:18] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [24/Dec/2023 23:14:21] "[33mDELETE /chatsession/1 HTTP/1.1[0m" 404 -
+INFO _internal.py:96 127.0.0.1 - - [24/Dec/2023 23:14:23] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [24/Dec/2023 23:20:48] "[35m[1mPOST /chatsession/ HTTP/1.1[0m" 201 -
+INFO _internal.py:96 127.0.0.1 - - [24/Dec/2023 23:20:51] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [24/Dec/2023 23:20:58] "[33mDELETE /chatsession/7 HTTP/1.1[0m" 404 -
+INFO _internal.py:96 127.0.0.1 - - [24/Dec/2023 23:21:00] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [24/Dec/2023 23:21:40] "[33mDELETE /chatsession/1 HTTP/1.1[0m" 404 -
+INFO _internal.py:96 127.0.0.1 - - [24/Dec/2023 23:21:42] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\api\\model_manager.py', reloading
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\api\\model_manager.py', reloading
+INFO _internal.py:96  * Restarting with stat
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [24/Dec/2023 23:28:36] "POST /chat/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [24/Dec/2023 23:30:32] "[35m[1mGET /chatsessions/ HTTP/1.1[0m" 500 -
+INFO _internal.py:96 127.0.0.1 - - [24/Dec/2023 23:30:36] "[35m[1mGET /chatsessions/ HTTP/1.1[0m" 500 -
+INFO _internal.py:96 127.0.0.1 - - [24/Dec/2023 23:30:45] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [24/Dec/2023 23:30:45] "[35m[1mGET /chatsessions/ HTTP/1.1[0m" 500 -
+INFO _internal.py:96 127.0.0.1 - - [24/Dec/2023 23:30:48] "[35m[1mGET /chatsessions/ HTTP/1.1[0m" 500 -
+INFO _internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:96 [33mPress CTRL+C to quit[0m
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [24/Dec/2023 23:31:13] "[35m[1mGET /chatsessions/ HTTP/1.1[0m" 500 -
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\api\\model_manager.py', reloading
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:96 [33mPress CTRL+C to quit[0m
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [24/Dec/2023 23:31:59] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [24/Dec/2023 23:34:58] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [24/Dec/2023 23:35:29] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [24/Dec/2023 23:35:34] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [24/Dec/2023 23:35:48] "[33mPUT /chatsession/${chatId} HTTP/1.1[0m" 404 -
+INFO _internal.py:96 127.0.0.1 - - [24/Dec/2023 23:35:50] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [24/Dec/2023 23:36:01] "[33mPUT /chatsession/${chatId} HTTP/1.1[0m" 404 -
+INFO _internal.py:96 127.0.0.1 - - [24/Dec/2023 23:40:19] "[33mPUT /chatsession/${chatId} HTTP/1.1[0m" 404 -
+INFO _internal.py:96 127.0.0.1 - - [24/Dec/2023 23:47:54] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [24/Dec/2023 23:47:56] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [24/Dec/2023 23:48:03] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [24/Dec/2023 23:48:04] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [24/Dec/2023 23:48:20] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\api\\model_manager.py', reloading
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\api\\model_manager.py', reloading
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [24/Dec/2023 23:49:41] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\api\\model_manager.py', reloading
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [24/Dec/2023 23:50:16] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\api\\model_manager.py', reloading
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [24/Dec/2023 23:51:11] "[33mPUT /chatsession/undefined HTTP/1.1[0m" 404 -
+INFO _internal.py:96 127.0.0.1 - - [24/Dec/2023 23:51:32] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [24/Dec/2023 23:51:34] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [24/Dec/2023 23:51:36] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [24/Dec/2023 23:51:39] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [24/Dec/2023 23:51:40] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [24/Dec/2023 23:51:44] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [24/Dec/2023 23:51:51] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [24/Dec/2023 23:51:53] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [24/Dec/2023 23:51:56] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [24/Dec/2023 23:51:58] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [24/Dec/2023 23:52:01] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [24/Dec/2023 23:52:10] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [24/Dec/2023 23:52:25] "[33mPUT /chatsession/undefined HTTP/1.1[0m" 404 -
+INFO _internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:96 [33mPress CTRL+C to quit[0m
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 08:39:51] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 08:39:53] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 08:40:00] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\api\\model_manager.py', reloading
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 08:43:57] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 08:43:57] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\api\\model_manager.py', reloading
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\api\\model_manager.py', reloading
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 08:44:55] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\api\\model_manager.py', reloading
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\api\\model_manager.py', reloading
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 08:46:17] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\api\\model_manager.py', reloading
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 08:46:33] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\api\\model_manager.py', reloading
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 08:49:38] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\api\\model_manager.py', reloading
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 08:51:48] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\api\\model_manager.py', reloading
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\api\\model_manager.py', reloading
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\api\\model_manager.py', reloading
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\api\\model_manager.py', reloading
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 08:53:39] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 08:54:48] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 08:56:18] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 08:56:33] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 09:02:41] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 09:02:42] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 09:02:45] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 09:03:10] "POST /chat/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 09:06:04] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 09:08:42] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 09:09:05] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 09:09:57] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 09:10:01] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 09:10:08] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 09:10:11] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 09:10:15] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 09:10:16] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 09:10:27] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\api\\model_manager.py', reloading
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 09:12:54] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:96 [33mPress CTRL+C to quit[0m
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 09:16:33] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\api\\model_manager.py', reloading
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 09:17:14] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\api\\model_manager.py', reloading
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 09:17:31] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 09:19:54] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 09:19:56] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 09:19:57] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 09:19:58] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 09:20:15] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 09:20:17] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 09:20:20] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 09:20:57] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 09:22:40] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 09:23:55] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 09:24:01] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 09:24:03] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 09:24:06] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 09:24:07] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 09:24:21] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 09:24:27] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 09:24:45] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 09:24:48] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 09:24:52] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 09:24:54] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 09:24:56] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 09:24:59] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 09:25:00] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 09:25:02] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 09:25:06] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 09:25:12] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 09:48:08] "[33mDELETE /chatsession/1 HTTP/1.1[0m" 404 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 09:51:11] "POST /chat/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 09:51:57] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 09:52:32] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 09:54:33] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 09:54:37] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 09:54:45] "DELETE /chatsession/1 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 09:54:48] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 09:55:00] "[33mPUT /chatsession/undefined HTTP/1.1[0m" 404 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 09:55:02] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 09:55:08] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 09:55:12] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 09:55:13] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 09:55:15] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 09:56:48] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 09:57:05] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 09:57:15] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 09:57:19] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 09:57:24] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 09:57:34] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 09:57:41] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 09:57:50] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 09:57:55] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 09:57:57] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 09:58:01] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 09:58:09] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 09:58:12] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 09:58:14] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 09:58:51] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:00:28] "[33mDELETE /chatsession/7 HTTP/1.1[0m" 404 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:00:30] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:00:53] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:00:57] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:00:59] "DELETE /chatsession/1703431248024 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:01:02] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:01:08] "[35m[1mPOST /chatsession/ HTTP/1.1[0m" 201 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:01:11] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:01:14] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:01:32] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:02:27] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:03:13] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:04:34] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:04:38] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:05:45] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:06:12] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:07:20] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:08:23] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:08:24] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:09:35] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:09:35] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:10:19] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:10:42] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:10:42] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:10:46] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:10:46] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:11:05] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:11:38] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:11:43] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:11:45] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:11:57] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:12:14] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:12:16] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:12:22] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:12:22] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:12:27] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:12:30] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:12:45] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:13:04] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:13:23] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:13:26] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:13:30] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:13:35] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:14:14] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:14:19] "DELETE /chatsession/1703469668345 HTTP/1.1" 200 -
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\api\\model_manager.py', reloading
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\api\\model_manager.py', reloading
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\api\\model_manager.py', reloading
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\api\\model_manager.py', reloading
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\api\\model_manager.py', reloading
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\api\\model_manager.py', reloading
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\api\\auth.py', reloading
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:96 [33mPress CTRL+C to quit[0m
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:18:35] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:18:36] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:18:48] "POST /chatsession/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:18:51] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:19:02] "PUT /chatsession/undefined HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:19:06] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:19:56] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:19:59] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:20:02] "DELETE /chatsession/9 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:20:06] "DELETE /chatsession/9 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:20:09] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:20:13] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:20:16] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:20:18] "DELETE /chatsession/1703470728837 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:20:20] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:21:05] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:21:17] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:21:26] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:21:28] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:21:29] "POST /chatsession/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:21:31] "DELETE /chatsession/10 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:21:35] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:21:37] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:21:39] "DELETE /chatsession/1703470889427 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:21:40] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:22:23] "DELETE /chatsession/2 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:22:26] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:22:27] "POST /chatsession/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:22:28] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:22:32] "PUT /chatsession/undefined HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:24:14] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:24:21] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:24:34] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:24:36] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\api\\model_manager.py', reloading
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:27:18] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:27:22] "PUT /chatsession/undefined HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:27:59] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:28:02] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:28:05] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:28:06] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:29:08] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:29:24] "PUT /chatsession/undefined HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:30:16] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:30:17] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:31:05] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:31:08] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:31:13] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:31:18] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:31:22] "PUT /chatsession/3 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:31:24] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:31:27] "DELETE /chatsession/3 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:31:28] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:32:41] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:32:42] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:32:47] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:33:22] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:33:23] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:33:51] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:37:31] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:37:33] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:37:35] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:37:47] "POST /chatsession/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:37:51] "PUT /chatsession/12 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:38:23] "POST /chat/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:38:58] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:39:08] "PUT /chatsession/1703470947364 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:39:12] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:39:17] "PUT /chatsession/1703471867286 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:39:21] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:39:49] "POST /chat/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:40:32] "POST /userinfo/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:42:12] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:42:18] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:42:52] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:45:51] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:46:08] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:46:11] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:46:14] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:46:43] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:46:45] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:46:46] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:47:07] "[31m[1mPOST /chathistory/[object%20Object] HTTP/1.1[0m" 415 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:47:08] "POST /chat/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:47:09] "[31m[1mPOST /chathistory/[object%20Object] HTTP/1.1[0m" 415 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:48:21] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:48:22] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:48:26] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:48:27] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:48:52] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:49:23] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:49:25] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:49:28] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:49:32] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:49:39] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:49:49] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:49:55] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:49:57] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:49:59] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:50:03] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:50:29] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:50:35] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:50:38] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:50:41] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:50:53] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:51:02] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:51:05] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:51:10] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:51:17] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:51:27] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:51:28] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:51:37] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:51:43] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:51:50] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:52:02] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:52:06] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:52:18] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:52:19] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:52:24] "[35m[1mPOST /chathistory/undefined HTTP/1.1[0m" 500 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:52:25] "POST /chat/ HTTP/1.1" 200 -
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\api\\model_manager.py', reloading
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:53:38] "[35m[1mPOST /chathistory/undefined HTTP/1.1[0m" 500 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:53:41] "POST /chat/ HTTP/1.1" 200 -
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\api\\model_manager.py', reloading
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\api\\model_manager.py', reloading
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:55:33] "[35m[1mPOST /chathistory/undefined HTTP/1.1[0m" 500 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:55:36] "POST /chat/ HTTP/1.1" 200 -
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\api\\model_manager.py', reloading
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\api\\model_manager.py', reloading
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:57:14] "POST /chathistory/undefined HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:57:17] "POST /chat/ HTTP/1.1" 200 -
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\api\\model_manager.py', reloading
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:58:33] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:58:38] "[35m[1mPOST /chathistory/undefined HTTP/1.1[0m" 500 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:58:41] "POST /chat/ HTTP/1.1" 200 -
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\api\\model_manager.py', reloading
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:59:21] "POST /chathistory/undefined HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 10:59:24] "POST /chat/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:00:53] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:00:55] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:01:03] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:01:05] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:01:12] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:01:16] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:01:26] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:01:27] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:01:33] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:01:35] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:01:38] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:02:18] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:02:20] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:02:22] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:02:38] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:02:59] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:03:00] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:03:04] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:03:11] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:03:14] "POST /chathistory/undefined HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:03:31] "POST /chat/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:03:31] "POST /chathistory/undefined HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:05:23] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:05:25] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:05:37] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:05:39] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:05:55] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:06:36] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:06:44] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:06:48] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:09:40] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:09:41] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:09:53] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:09:55] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:10:05] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:10:22] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:10:26] "POST /chathistory/undefined HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:10:29] "POST /chat/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:10:29] "POST /chathistory/undefined HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:22:35] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:22:37] "[31m[1mGET /chathistory/1703471867286 HTTP/1.1[0m" 405 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:22:37] "[31m[1mGET /chathistory/1703470947364 HTTP/1.1[0m" 405 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:22:44] "[31m[1mGET /chathistory/1703471867286 HTTP/1.1[0m" 405 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:22:48] "[31m[1mGET /chathistory/1703470947364 HTTP/1.1[0m" 405 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:23:32] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:23:34] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\api\\model_manager.py', reloading
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:25:22] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\api\\model_manager.py', reloading
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\api\\model_manager.py', reloading
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\api\\model_manager.py', reloading
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:27:07] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:27:17] "[35m[1mPOST /chathistory/undefined HTTP/1.1[0m" 500 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:27:18] "POST /chat/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:27:18] "[35m[1mPOST /chathistory/undefined HTTP/1.1[0m" 500 -
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\api\\model_manager.py', reloading
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:27:33] "POST /chathistory/undefined HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:27:36] "POST /chat/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:27:36] "POST /chathistory/undefined HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:28:11] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:28:13] "GET /chathistory/1703471867286 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:28:14] "GET /chathistory/1703470947364 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:28:17] "GET /chathistory/1703471867286 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:28:19] "GET /chathistory/1703470947364 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:28:20] "GET /chathistory/1703471867286 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:28:22] "GET /chathistory/1703470947364 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:28:23] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:28:25] "GET /chathistory/1703471867286 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:28:26] "GET /chathistory/1703470947364 HTTP/1.1" 200 -
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\api\\model_manager.py', reloading
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:29:40] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:29:41] "GET /chathistory/1703471867286 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:29:42] "GET /chathistory/1703470947364 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:29:46] "GET /chathistory/1703471867286 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:29:46] "GET /chathistory/1703470947364 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:29:46] "GET /chathistory/1703471867286 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:29:47] "GET /chathistory/1703470947364 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:29:48] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:30:03] "GET /chathistory/1703471867286 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:30:04] "GET /chathistory/1703470947364 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:30:05] "GET /chathistory/1703471867286 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:30:05] "GET /chathistory/1703470947364 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:30:08] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:31:00] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:31:02] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:31:02] "GET /chathistory/1703470947364 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:31:06] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:31:06] "GET /chathistory/1703470947364 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:31:07] "GET /chathistory/1703471867286 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:31:08] "GET /chathistory/1703470947364 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:31:14] "PUT /chatsession/1703470947364 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:31:17] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:31:17] "GET /chathistory/1703470947364 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:31:17] "GET /chathistory/1703471867286 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:31:18] "GET /chathistory/1703470947364 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:31:19] "GET /chathistory/1703471867286 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:31:20] "GET /chathistory/1703470947364 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:31:21] "GET /chathistory/1703471867286 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:31:21] "GET /chathistory/1703470947364 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:31:24] "PUT /chatsession/1703470947364 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:31:26] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:31:26] "GET /chathistory/1703470947364 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:33:02] "GET /chathistory/1703471867286 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:33:02] "GET /chathistory/1703470947364 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:33:04] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:33:04] "GET /chathistory/1703470947364 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:33:05] "GET /chathistory/1703471867286 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:33:06] "GET /chathistory/1703470947364 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:33:06] "GET /chathistory/1703471867286 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:33:07] "GET /chathistory/1703470947364 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:33:08] "GET /chathistory/1703471867286 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:33:08] "GET /chathistory/1703470947364 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:33:08] "GET /chathistory/1703471867286 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:33:09] "GET /chathistory/1703470947364 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:33:10] "GET /chathistory/1703471867286 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:33:11] "GET /chathistory/1703470947364 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:33:11] "GET /chathistory/1703471867286 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:33:11] "GET /chathistory/1703470947364 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:33:12] "GET /chathistory/1703471867286 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:33:13] "GET /chathistory/1703470947364 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:33:13] "GET /chathistory/1703471867286 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:33:15] "GET /chathistory/1703471867286 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:33:15] "GET /chathistory/1703471867286 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:33:16] "GET /chathistory/1703470947364 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:33:16] "GET /chathistory/1703471867286 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:33:17] "GET /chathistory/1703470947364 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:33:17] "GET /chathistory/1703471867286 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:33:17] "GET /chathistory/1703470947364 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:33:18] "GET /chathistory/1703471867286 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:33:19] "GET /chathistory/1703470947364 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:33:19] "GET /chathistory/1703471867286 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:33:20] "GET /chathistory/1703470947364 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:33:20] "GET /chathistory/1703471867286 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:33:21] "GET /chathistory/1703470947364 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:33:36] "GET /chathistory/1703471867286 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:33:37] "GET /chathistory/1703470947364 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:33:37] "GET /chathistory/1703471867286 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:33:37] "GET /chathistory/1703470947364 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:33:37] "GET /chathistory/1703471867286 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:33:37] "GET /chathistory/1703470947364 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:33:37] "GET /chathistory/1703471867286 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:33:38] "GET /chathistory/1703470947364 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:33:38] "GET /chathistory/1703471867286 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:33:39] "GET /chathistory/1703470947364 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:33:52] "GET /chathistory/1703471867286 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 11:33:53] "GET /chathistory/1703470947364 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 12:53:33] "GET /chathistory/1703471867286 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 12:53:33] "GET /chathistory/1703470947364 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 12:53:34] "GET /chathistory/1703471867286 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 12:53:34] "GET /chathistory/1703470947364 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 12:53:37] "POST /userinfo/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 12:53:40] "GET /chathistory/1703471867286 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 12:53:40] "GET /chathistory/1703470947364 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 12:53:41] "GET /chathistory/1703471867286 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 12:53:41] "GET /chathistory/1703470947364 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 12:54:46] "POST /chathistory/undefined HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 12:54:55] "POST /chat/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 12:54:55] "POST /chathistory/undefined HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 12:55:02] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 12:55:02] "GET /chathistory/1703470947364 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 12:55:07] "GET /chathistory/1703471867286 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 12:55:07] "GET /chathistory/1703470947364 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 12:56:56] "POST /chathistory/undefined HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 12:56:59] "POST /chat/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 12:56:59] "POST /chathistory/undefined HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 12:57:48] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 12:57:48] "GET /chathistory/1703470947364 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 12:59:29] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 12:59:29] "GET /chathistory/1703470947364 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 12:59:31] "GET /chathistory/1703471867286 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 12:59:31] "GET /chathistory/1703470947364 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 13:03:46] "POST /chathistory/undefined HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 13:03:56] "POST /chat/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 13:03:56] "POST /chathistory/undefined HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 13:04:01] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 13:04:01] "GET /chathistory/1703470947364 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 13:05:37] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 13:05:37] "GET /chathistory/1703470947364 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 13:05:48] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 13:05:49] "GET /chathistory/1703470947364 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 13:05:57] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 13:05:57] "GET /chathistory/1703470947364 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 13:06:07] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 13:06:07] "GET /chathistory/1703470947364 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 13:06:11] "GET /chathistory/1703471867286 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 13:06:12] "GET /chathistory/1703470947364 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 13:06:15] "GET /chathistory/1703471867286 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 13:06:15] "GET /chathistory/1703470947364 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 13:06:22] "POST /userinfo/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 13:09:59] "GET /chathistory/1703471867286 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 13:10:00] "GET /chathistory/1703470947364 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 13:10:00] "GET /chathistory/1703471867286 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 13:10:00] "GET /chathistory/1703470947364 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 13:10:05] "POST /userinfo/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 13:10:12] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 13:10:12] "GET /chathistory/1703470947364 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 13:13:16] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 13:13:16] "GET /chathistory/1703470947364 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 13:17:37] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [25/Dec/2023 13:17:37] "GET /chathistory/1703470947364 HTTP/1.1" 200 -
