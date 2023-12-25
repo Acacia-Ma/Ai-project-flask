@@ -94,6 +94,13 @@ class EditUser(Resource):
         password = form_data.get('password')
         password_old = form_data.get('password_old')
         print(username,realname,password,password_old)
+
+        # 检查新密码是否为空
+        if not password:
+            return {"msg": "新密码不能为空", "code": 400}
+        # 检查原密码和旧密码是否一致
+        if password_old == password:
+            return {"msg": "新密码不能和旧密码一致", "code": 400}
         # 数据库中的密码
         user = User.query.filter(User.username==username).first()
         if user.password != password_old:

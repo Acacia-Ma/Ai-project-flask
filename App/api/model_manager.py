@@ -4,12 +4,28 @@ from flask_restful import Resource
 from datetime import datetime
 from App.api import SparkApi  # 引入之前提供的SparkApi模块
 from App.models import *
+
 # 全局变量，存储星火大模型的密钥信息和地址
 APPID = "fd0f6084"
 API_SECRET = "MGY1NjdhYzExNmIwMGEzZWIwNWU1NjJi"
 API_KEY = "a7fc595758ba180b6de76c7fd4f51105"
 DOMAIN = "general"
 SPARK_URL = "ws://spark-api.xf-yun.com/v1.1/chat"
+
+# 星火大模型v1.5
+app_id = "fd0f6084"
+api_secret = "MGY1NjdhYzExNmIwMGEzZWIwNWU1NjJi"
+api_key = "a7fc595758ba180b6de76c7fd4f51105"
+domain = "general"
+spark_url = "ws://spark-api.xf-yun.com/v1.1/chat"
+
+# 星火大模型v3.0
+app_id1 = "af076b92"
+api_secret1 = "NTkyYWUzMzQ5MmY2YmY0MjQyNWY5NGUy"
+api_key1 = "cb55e35a63d1c8c91bc5ce67e11c7cc5"
+domain1 = "generalv3"
+spark_url1 = "ws://spark-api.xf-yun.com/v3.1/chat"
+
 
 class Chat(Resource):
     def __init__(self):
@@ -67,26 +83,31 @@ class ChatSessionResource(Resource):
             'username': session.username,
             'model_id': session.model_id,
             'title': session.title,
-            'updated_at': ChatHistoryModel.query.filter_by(chat_id=session.chat_id).order_by(ChatHistoryModel.updated_at.desc()).first().updated_at if ChatHistoryModel.query.filter_by(chat_id=session.chat_id).first() else None
+            'updated_at': ChatHistoryModel.query.filter_by(chat_id=session.chat_id).order_by(
+                ChatHistoryModel.updated_at.desc()).first().updated_at if ChatHistoryModel.query.filter_by(
+                chat_id=session.chat_id).first() else None
         } for session in sessions]
         # print(session_data)
         # return jsonify(session_data)
         return {"code": 0, "msg": "成功获取到所有聊天会话", "data": session_data}
 
     # 创建新聊天会话
+    @jwt_required()
     def post(self):
         data = request.json
         new_session = ChatItemsModel(
             chat_id=data['chat_id'],
             username=data['username'],
             model_id=data.get('model_id'),
-            title=data.get('title')
+            title=data.get('title'),
         )
+        updated_at = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         db.session.add(new_session)
         db.session.commit()
-        return {"code": 0, "msg": "会话创建成功", "data": {"id": new_session.id}}
+        return {"code": 0, "msg": "会话创建成功", "data": {"updatedAt": updated_at}}
 
     # 删除聊天会话
+    @jwt_required()
     def delete(self, chat_id):
         session = ChatItemsModel.query.filter_by(chat_id=chat_id).first()
         if session:
@@ -96,15 +117,17 @@ class ChatSessionResource(Resource):
         return {"code": 404, "msg": "会话未找到"}
 
     # 修改会话名称
+    @jwt_required()
     def put(self, chat_id):
         data = request.json
-        print(chat_id,data['title'])
+        print(chat_id, data['title'])
         session = ChatItemsModel.query.filter_by(chat_id=chat_id).first()
         if session:
             session.title = data['title']
             db.session.commit()
             return {"code": 0, "msg": "会话删除成功"}
         return {"code": 404, "msg": "会话未找到"}
+
 
 class ChatHistoryResource(Resource):
     # 保存聊天记录
@@ -146,5 +169,3 @@ class ChatHistoryResource(Resource):
         # print(session_data)
         # return jsonify(session_data)
         return {"code": 0, "msg": "成功获取到所有聊天记录", "data": history_data}
-
-
