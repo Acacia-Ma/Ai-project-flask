@@ -53,21 +53,26 @@ class Chat(Resource):
         # 从请求中获取问题
         data = request.json
         input_text = data.get('text')
-
+        model_value = data.get('model')
         # 检查和更新聊天文本
         question = self.checklen(self.getText("user", input_text))
-
         # 清空上次的回答
         SparkApi.answer = ""
-
-        # 调用星火大模型
-        SparkApi.main(APPID, API_KEY, API_SECRET, SPARK_URL, DOMAIN, question)
-
-        # 获取并记录助手的回答
-        self.getText("assistant", SparkApi.answer)
-
-        # 返回状态码和模型回答
-        return {"code": 0, "msg": "成功", "data": {"response": SparkApi.answer}}
+        if model_value:
+            # 调用星火大模型v1.5或v3.0
+            if model_value == "v1.5":
+                print("调用星火大模型v1.5")
+                SparkApi.main(app_id, api_key, api_secret, spark_url, domain, question)
+            elif model_value == "v3.0":
+                print("调用星火大模型v3.0")
+                SparkApi.main(app_id1, api_key1, api_secret1, spark_url1, domain1, question)
+            # 获取并记录助手的回答
+            self.getText("assistant", SparkApi.answer)
+            # 返回状态码和模型回答
+            return {"code": 0, "msg": "成功", "data": {"response": SparkApi.answer}}
+        else:
+            # 返回错误信息
+            return {"code": 400, "msg": "模型参数错误,请选择模型版本"}
 
 
 class ChatSessionResource(Resource):
@@ -97,10 +102,16 @@ class ChatSessionResource(Resource):
     def post(self):
         data = request.json
         # 创建并添加 ChatItemsModel 实例
+        model_id = 1
+        model_txt = data.get('model_id')
+        if model_txt == "v1.5":
+            model_id = 1
+        elif model_txt == "v3.0":
+            model_id = 2
         new_session = ChatItemsModel(
             chat_id=data['chat_id'],
             username=data['username'],
-            model_id=data.get('model_id'),
+            model_id=model_id,
             title=data.get('title'),
         )
         db.session.add(new_session)
@@ -144,7 +155,7 @@ class ChatSessionResource(Resource):
         if session:
             session.title = data['title']
             db.session.commit()
-            return {"code": 0, "msg": "会话删除成功"}
+            return {"code": 0, "msg": "会话修改成功"}
         return {"code": 404, "msg": "会话未找到"}
 
 
