@@ -48,6 +48,7 @@ class Chat(Resource):
             del text[0]
         return text
 
+    @jwt_required()
     def post(self):
         # 从请求中获取问题
         data = request.json
@@ -95,22 +96,40 @@ class ChatSessionResource(Resource):
     @jwt_required()
     def post(self):
         data = request.json
+        # 创建并添加 ChatItemsModel 实例
         new_session = ChatItemsModel(
             chat_id=data['chat_id'],
             username=data['username'],
             model_id=data.get('model_id'),
             title=data.get('title'),
         )
-        updated_at = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         db.session.add(new_session)
+        # 创建并添加 ChatHistoryModel 实例
+        new_history = ChatHistoryModel(
+            chat_id=data['chat_id'],
+            username=data['username'],
+            type='init',  # 初始化消息类型为 'init'
+            Content='您好，我是科大讯飞研发的认知智能大模型，我的名字叫讯飞星火认知大模型。我可以和人类进行自然交流，解答问题，高效完成各领域认知智能需求。',  # 初始化消息内容
+            role='system',  # 消息角色为系统
+            created_at=datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+            updated_at=datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        )
+        db.session.add(new_history)
+        # 提交数据库变更
         db.session.commit()
-        return {"code": 0, "msg": "会话创建成功", "data": {"updatedAt": updated_at}}
+        # 输出创建的会话信息
+        print(new_session)
+        # 返回成功响应
+        return {"code": 0, "msg": "会话创建成功", "data": {"updatedAt": datetime.now().strftime("%Y-%m-%d %H:%M:%S")}}
 
-    # 删除聊天会话
+    # 删除聊天会话和对应的聊天记录
     @jwt_required()
     def delete(self, chat_id):
         session = ChatItemsModel.query.filter_by(chat_id=chat_id).first()
+        session_history = ChatHistoryModel.query.filter_by(chat_id=chat_id).all()
         if session:
+            for history in session_history:
+                db.session.delete(history)
             db.session.delete(session)
             db.session.commit()
             return {"code": 0, "msg": "会话删除成功"}
