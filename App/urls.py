@@ -14,4 +14,4 @@ api.add_resource(Logout,"/logout/")
 api.add_resource(Chat,"/chat/")
 api.add_resource(ChatSessionResource, '/chatsessions/', '/chatsession/', '/chatsession/<string:chat_id>')
 api.add_resource(ChatHistoryResource, '/chathistory/<string:chat_id>')
-
+api.add_resource(MachineTranslationResource, '/translation/')

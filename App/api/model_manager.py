@@ -26,7 +26,7 @@ api_key1 = "cb55e35a63d1c8c91bc5ce67e11c7cc5"
 domain1 = "generalv3"
 spark_url1 = "ws://spark-api.xf-yun.com/v3.1/chat"
 
-
+# 对话功能，用于与前端交互
 class Chat(Resource):
     def __init__(self):
         self.text = []
