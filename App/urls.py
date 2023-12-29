@@ -15,3 +15,7 @@ api.add_resource(Chat,"/chat/")
 api.add_resource(ChatSessionResource, '/chatsessions/', '/chatsession/', '/chatsession/<string:chat_id>')
 api.add_resource(ChatHistoryResource, '/chathistory/<string:chat_id>')
 api.add_resource(MachineTranslationResource, '/translation/')
+api.add_resource(imga_upload, '/uploadimg/')
+api.add_resource(imga_download, '/imgadownload/<string:img_name>')
+api.add_resource(ImageRecognition, '/imgaresult/')
+

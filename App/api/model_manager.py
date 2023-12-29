@@ -5,6 +5,7 @@ from datetime import datetime
 from App.api import SparkApi  # 引入之前提供的SparkApi模块
 from App.models import *
 
+
 # 全局变量，存储星火大模型的密钥信息和地址
 APPID = "fd0f6084"
 API_SECRET = "MGY1NjdhYzExNmIwMGEzZWIwNWU1NjJi"
