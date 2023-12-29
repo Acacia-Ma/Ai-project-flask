@@ -5897,3 +5897,346 @@ INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 14:17:07] "POST /uploadimg/ HTTP
 INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 14:22:21] "POST /uploadimg/ HTTP/1.1" 200 -
 INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 14:22:22] "GET /imgadownload/1703830941.png HTTP/1.1" 200 -
 INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 14:22:24] "POST /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:96 [33mPress CTRL+C to quit[0m
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 14:33:57] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 14:34:00] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 14:34:00] "GET /chathistory/1703597133035 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 14:34:07] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 14:34:07] "GET /chathistory/1703597133035 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 14:34:13] "POST /uploadimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 14:34:13] "GET /imgadownload/1703831653.png HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 14:34:16] "POST /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 14:47:50] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 14:47:50] "GET /chathistory/1703597133035 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 14:47:58] "POST /uploadimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 14:47:59] "GET /imgadownload/1703832478.png HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 14:48:02] "POST /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 14:48:14] "POST /uploadimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 14:48:14] "GET /imgadownload/1703832494.png HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 14:48:21] "POST /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 14:48:33] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 14:48:33] "GET /chathistory/1703597133035 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 14:48:39] "POST /uploadimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 14:48:40] "GET /imgadownload/1703832519.png HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 14:48:41] "POST /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 14:48:46] "POST /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 14:48:53] "POST /uploadimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 14:48:53] "GET /imgadownload/1703832533.png HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 14:48:54] "POST /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 14:49:05] "POST /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 15:01:32] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 15:01:32] "GET /chathistory/1703597133035 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 15:07:31] "POST /uploadimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 15:07:31] "GET /imgadownload/1703833651.png HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 15:07:56] "POST /uploadimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 15:07:56] "GET /imgadownload/1703833676.png HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 15:12:00] "POST /uploadimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 15:12:01] "GET /imgadownload/1703833920.png HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 15:12:05] "POST /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 15:12:25] "POST /uploadimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 15:12:25] "GET /imgadownload/1703833945.png HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 15:12:27] "POST /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 15:12:33] "POST /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 15:12:47] "POST /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:96 [33mPress CTRL+C to quit[0m
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 16:31:46] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 16:31:46] "GET /chathistory/1703597133035 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 16:31:58] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 16:31:59] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 16:31:59] "GET /chathistory/1703597133035 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 16:32:00] "GET /chathistory/1703597133265 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 16:32:01] "GET /chathistory/1703597133035 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 16:32:01] "GET /chathistory/1703597133265 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 16:32:02] "GET /chathistory/1703597133035 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 16:32:03] "GET /chathistory/1703597133265 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 16:32:03] "GET /chathistory/1703597133265 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 16:32:03] "GET /chathistory/1703597133035 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 16:32:04] "GET /chathistory/1703597133265 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 16:32:04] "GET /chathistory/1703597133035 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 16:32:04] "GET /chathistory/1703597133265 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 16:32:04] "GET /chathistory/1703597133035 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 16:32:04] "GET /chathistory/1703597133265 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 16:32:05] "GET /chathistory/1703597133035 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 16:32:06] "GET /chathistory/1703597133265 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 16:32:07] "DELETE /chatsession/1703597133265 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 16:32:08] "POST /chatsession/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 16:32:09] "GET /chathistory/1703838728322 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 16:32:11] "GET /chathistory/1703838728322 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 16:32:13] "DELETE /chatsession/1703838728322 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 16:32:15] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 16:32:15] "GET /chathistory/1703597133035 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 16:33:01] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 16:33:01] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 16:33:08] "POST /chatsession/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 16:33:08] "GET /chathistory/1703838788524 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 16:33:08] "POST /chathistory/undefined HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 16:33:09] "POST /chat/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 16:33:09] "POST /chathistory/undefined HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 16:33:43] "PUT /chatsession/1703838788524 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 16:33:46] "POST /userinfo/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 16:33:57] "POST /edituser/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 16:34:01] "POST /userinfo/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 16:34:10] "POST /edituser/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 16:34:13] "POST /userinfo/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 16:35:07] "[35m[1mPOST /translation/ HTTP/1.1[0m" 500 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 16:35:16] "POST /translation/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 16:35:52] "POST /translation/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 16:36:06] "POST /translation/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 16:36:16] "POST /translation/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 16:36:34] "POST /uploadimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 16:36:35] "GET /imgadownload/1703838994.png HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 16:36:36] "POST /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 16:36:57] "POST /uploadimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 16:36:57] "GET /imgadownload/1703839017.png HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 16:36:59] "POST /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 16:37:13] "POST /logout/ HTTP/1.1" 200 -
+INFO _internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:96 [33mPress CTRL+C to quit[0m
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 16:55:14] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 16:55:14] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 16:55:14] "GET /chathistory/1703597133035 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 16:55:21] "POST /uploadimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 16:55:21] "GET /imgadownload/1703840121.png HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 16:55:23] "POST /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 16:55:30] "POST /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 17:14:39] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 17:14:39] "GET /chathistory/1703597133035 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 17:14:46] "POST /uploadimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 17:16:59] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 17:16:59] "GET /chathistory/1703597133035 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 17:17:03] "POST /uploadimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 17:17:03] "GET /imgadownload/1703841423.jpg HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 17:17:12] "POST /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 17:18:42] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 17:18:42] "GET /chathistory/1703597133035 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 17:18:46] "POST /uploadimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 17:18:46] "GET /imgadownload/1703841526.jpg HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 17:19:49] "POST /uploadimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 17:19:49] "GET /imgadownload/1703841589.jpg HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 17:20:07] "POST /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 17:20:14] "POST /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 17:20:47] "POST /uploadimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 17:20:47] "GET /imgadownload/1703841647.png HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 17:20:53] "POST /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 17:38:41] "POST /uploadimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 17:38:41] "GET /imgadownload/1703842721.png HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 17:38:45] "POST /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 17:38:52] "POST /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 17:38:58] "POST /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 17:39:51] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 17:39:51] "GET /chathistory/1703597133035 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 17:39:55] "POST /uploadimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 17:39:55] "GET /imgadownload/1703842795.png HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 17:39:59] "POST /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 17:40:14] "POST /uploadimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 17:40:14] "GET /imgadownload/1703842814.png HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 17:40:17] "POST /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 17:40:20] "POST /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 17:40:41] "POST /uploadimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 17:40:42] "GET /imgadownload/1703842841.png HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 17:40:45] "POST /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 17:40:49] "POST /uploadimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 17:40:49] "GET /imgadownload/1703842849.png HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 17:40:52] "POST /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 17:46:24] "POST /uploadimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 17:46:24] "GET /imgadownload/1703843184.png HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 17:46:28] "POST /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 17:47:22] "POST /uploadimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 17:47:22] "GET /imgadownload/1703843242.png HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 17:47:25] "POST /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\api\\Imga_upload.py', reloading
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\api\\Imga_upload.py', reloading
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\api\\Imga_upload.py', reloading
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\api\\Imga_upload.py', reloading
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\api\\Imga_upload.py', reloading
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\api\\Imga_upload.py', reloading
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\api\\Imga_upload.py', reloading
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\api\\Imga_upload.py', reloading
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\api\\Imga_upload.py', reloading
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\api\\Imga_upload.py', reloading
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\api\\Imga_upload.py', reloading
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\api\\Imga_upload.py', reloading
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\api\\Imga_upload.py', reloading
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\api\\Imga_upload.py', reloading
+INFO _internal.py:96  * Restarting with stat
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 19:07:59] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 19:07:59] "GET /chathistory/1703597133035 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 19:08:03] "POST /uploadimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 19:08:03] "GET /imgadownload/1703848083.png HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 19:08:04] "POST /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\api\\Imga_upload.py', reloading
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 19:09:00] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 19:09:00] "GET /chathistory/1703597133035 HTTP/1.1" 200 -
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\api\\Imga_upload.py', reloading
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 19:09:29] "POST /uploadimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 19:09:30] "GET /imgadownload/1703848169.png HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 19:09:30] "POST /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\api\\Imga_upload.py', reloading
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 19:10:06] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 19:10:06] "GET /chathistory/1703597133035 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 19:10:12] "POST /uploadimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 19:10:13] "GET /imgadownload/1703848212.png HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 19:10:14] "POST /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\models\\models.py', reloading
+INFO _internal.py:96  * Restarting with stat
+INFO _internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:96 [33mPress CTRL+C to quit[0m
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 19:12:18] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 19:12:18] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 19:12:18] "GET /chathistory/1703597133035 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 19:12:22] "POST /uploadimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 19:12:22] "GET /imgadownload/1703848342.png HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 19:12:23] "POST /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\api\\Imga_upload.py', reloading
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\api\\Imga_upload.py', reloading
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\api\\Imga_upload.py', reloading
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 20:26:50] "[35m[1mGET /imgaresult/ HTTP/1.1[0m" 500 -
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\api\\Imga_upload.py', reloading
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 20:30:27] "GET /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 20:55:32] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 20:55:32] "GET /chathistory/1703597133035 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 20:55:35] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 20:55:35] "GET /chathistory/1703597133035 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 20:55:35] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 20:55:35] "GET /chathistory/1703597133035 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 20:55:37] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 20:55:37] "GET /chathistory/1703597133035 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 20:57:50] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 20:57:50] "GET /chathistory/1703597133035 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 20:58:36] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 20:58:36] "GET /chathistory/1703597133035 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 21:00:10] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 21:00:10] "GET /chathistory/1703597133035 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 21:00:11] "GET /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 21:00:42] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 21:00:42] "GET /chathistory/1703597133035 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 21:00:43] "GET /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 21:01:04] "GET /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 21:01:09] "GET /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 21:01:12] "GET /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 21:01:15] "GET /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 21:01:20] "GET /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 21:01:24] "GET /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 21:01:24] "GET /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 21:06:39] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 21:06:39] "GET /chathistory/1703597133035 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 21:06:40] "GET /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\api\\Imga_upload.py', reloading
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 21:08:22] "GET /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 21:08:57] "GET /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 21:09:09] "GET /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 21:09:25] "GET /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 21:09:43] "GET /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 21:09:50] "GET /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 21:09:58] "GET /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 21:10:01] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 21:10:02] "GET /chathistory/1703597133035 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 21:10:03] "GET /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 21:19:22] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 21:19:22] "GET /chathistory/1703597133035 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 21:19:24] "GET /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 21:19:42] "GET /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 21:19:43] "GET /imgadownload/1703848342.png HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 21:20:03] "GET /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 21:20:13] "GET /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 21:20:16] "GET /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 21:20:16] "GET /imgadownload/1703848342.png HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 21:20:20] "GET /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 21:20:24] "GET /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 21:20:29] "POST /uploadimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 21:20:29] "GET /imgadownload/1703856029.png HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 21:20:31] "POST /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 21:20:36] "POST /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 21:20:39] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 21:20:39] "GET /chathistory/1703597133035 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 21:20:40] "GET /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 21:20:40] "GET /imgadownload/1703848342.png HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [29/Dec/2023 21:20:40] "GET /imgadownload/1703856029.png HTTP/1.1" 200 -
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\api\\Imga_upload.py', reloading
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649

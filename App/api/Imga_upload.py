@@ -2,8 +2,9 @@
 # 上传的图像文件名为时间戳
 import os
 import time
-
+from App.models import *
 from flask import request, make_response, json
+from flask_jwt_extended import jwt_required, get_jwt_identity
 from flask_restful import Resource
 from App.api.ocr_mix_instig import get_result
 basedir = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
@@ -69,10 +70,14 @@ class imga_download(Resource):
 
 # 给前端返回图像识别结果
 class ImageRecognition(Resource):
+    # 将图像识别结果保存到数据库，并返回识别结果
+    @jwt_required()
     def post(self):
         # 从请求中获取文件名
         data = request.get_json()
         filename = data.get('image_name')
+        id = data.get('id')
+        username = get_jwt_identity()
         if not filename:
             return {"msg": "文件名不能为空", "code": 400}
 
@@ -89,6 +94,36 @@ class ImageRecognition(Resource):
             recognition_result_end = json.loads(recognition_result)
             print("最后的识别结果：",recognition_result_end['whole_text'])
             text = recognition_result_end['whole_text']
+            create_time = data.get('create_time')
+            # 存储数据到数据库TextImgModel
+            new_textimg = TextImgModel(
+                img_id=id,
+                username=username,
+                content=text,
+                created_at=create_time,
+                name = filename,
+            )
+            db.session.add(new_textimg)
+            db.session.commit()
+
             return {"msg": "识别成功", "code": 0, "data": {"text": text}}
         except Exception as e:
             return {"msg": str(e), "code": 500}
+    # 识别历史记录
+    @jwt_required()
+    def get(self):
+        username = get_jwt_identity()
+        print("当前用户:", username)
+        # 从数据库中获取识别历史记录
+        sessions_img = TextImgModel.query.filter_by(username=username).all()
+        session_img = [
+            {
+                "id": session_img.id,
+                "img_id": session_img.img_id,
+                "username": session_img.username,
+                "content": session_img.content,
+                "created_at": session_img.created_at,
+                "name": session_img.name,
+            }
+            for session_img in sessions_img]
+        return {"code": 0, "msg": "获取识别历史记录成功", "data": session_img}

@@ -63,3 +63,19 @@ class ChatHistoryModel(db.Model):
     created_at = db.Column(db.String(100))
     # 消息更新的时间
     updated_at = db.Column(db.String(100))
+
+# 图片识别
+class TextImgModel(db.Model):
+    __tablename__='text_img'
+    # 主键，自增长的ID
+    id = db.Column(db.Integer, primary_key=True, autoincrement=True)
+
+    img_id = db.Column(db.String(200), nullable=False)
+    # 用户的唯一标识
+    username = db.Column(db.String(50))
+    # 图片的唯一标识
+    name=db.Column(db.String(100))
+    # 图片的内容
+    content = db.Column(db.UnicodeText)
+    # 图片的创建时间
+    created_at = db.Column(db.String(100))
