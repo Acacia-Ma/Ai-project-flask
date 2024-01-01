@@ -36,7 +36,7 @@ class imga_upload(Resource):
             return {"msg": "文件格式不支持，只支持png、jpg、jpeg、bmp", "code": 400}
         # 检查文件大小是否符合要求，限制文件大小为4MB
         if int(request.content_length) > 4 * 1024 * 1024:
-            return {"msg": "文件大小超过限制", "code": 400}
+            return {"msg": "文件大小超过限制,最大只允许4M", "code": 400}
         # 保存文件
         if file and allowed_file(file.filename):
             # 获取文件名
@@ -63,8 +63,8 @@ class imga_download(Resource):
         image_data = open(os.path.join(fire_dir, '%s' % img_name), "rb").read()
         # 返回文件
         response = make_response(image_data)
-        # 设置响应头
-        response.headers['Content-Type'] = 'image/png'
+        # 设置响应头，告诉浏览器这是一个图片
+        response.headers['Content-Type'] = 'image/png/jpeg/jpg/bmp'
         # 返回响应
         return response
 
