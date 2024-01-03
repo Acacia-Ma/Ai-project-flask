@@ -61,25 +61,38 @@ class MachineTranslationResource(Resource):
 
 
     def post(self):
+        # 从请求中获取文件名
         data = request.get_json()
         source_language = data.get("sourceLanguage")
         target_language = data.get("targetLanguage")
         text_to_translate = data.get("text")
+        # 实例化翻译器
         translator = self.Translator()
-
+        # 获取翻译结果
         body = translator.get_body(text_to_translate, source_language, target_language)
+        # 获取当前时间
         date = translator.http_date(datetime.datetime.utcnow())
+        # 获取请求头
         headers = translator.get_headers(body, date)
+        # 发送请求
         response = requests.post(url=translator.url, headers=headers, data=body)
+        # 获取响应状态码
         status_code = response.status_code
+        # 判断响应状态码
         if status_code != 200:
            return {"error": "Http requsest failed. Status code: " + str(status_code)}
         else:
+            # 获取响应数据
             respData = response.json()
+            # 获取翻译结果
             result = respData.get('data',{}).get('result','')
+            # 获取源语言
             detectedSourceLanguage = result['from']
+            # 获取翻译结果
             trans = result['trans_result']
+            # 获取翻译文本
             translate = trans['dst']
+            # 返回翻译结果
             return {'code': 0, 'data': {'translatedText':translate,'detectedSourceLanguage':detectedSourceLanguage}, 'msg': '翻译成功'}
 
 
