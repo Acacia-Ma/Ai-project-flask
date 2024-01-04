@@ -15,6 +15,9 @@ class User(db.Model):
     realname = db.Column(db.String(40), nullable=False)
     # 创建password字段，字符串类型，不为空
     password = db.Column(db.String(255), nullable=False)
+    # 个人头像图片名字，字符串类型，可为空
+    img = db.Column(db.String(255), nullable=True)
+
 
     def check_pwd(self,t_pwd):
         print(t_pwd)

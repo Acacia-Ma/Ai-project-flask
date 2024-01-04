@@ -18,4 +18,5 @@ api.add_resource(MachineTranslationResource, '/translation/')
 api.add_resource(imga_upload, '/uploadimg/')
 api.add_resource(imga_download, '/imgadownload/<string:img_name>')
 api.add_resource(ImageRecognition, '/imgaresult/')
+api.add_resource(UserImg, '/userimg/')
 

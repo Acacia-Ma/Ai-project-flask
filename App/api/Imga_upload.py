@@ -127,3 +127,43 @@ class ImageRecognition(Resource):
             }
             for session_img in sessions_img]
         return {"code": 0, "msg": "获取识别历史记录成功", "data": session_img}
+
+# 用户头像修改
+class UserImg(Resource):
+    @jwt_required()
+    def post(self):
+        # 从请求中获取文件名
+        data = request.json
+        filename = data.get('image_name')
+        print('用户头像文件名：',filename)
+        username = get_jwt_identity()
+        if not filename:
+            return {"msg": "文件名不能为空", "code": 400}
+
+        # 检查文件是否存在
+        file_path = os.path.join(UPLOAD_FOLDER, filename)
+        if not os.path.exists(file_path):
+            return {"msg": "文件不存在", "code": 404}
+        print(file_path)
+        # 修改用户头像
+        try:
+            user = User.query.filter(User.username == username).first()
+            user.img = filename
+            db.session.commit()
+            return {"msg": "修改成功", "code": 0}
+        except Exception as e:
+            return {"msg": str(e), "code": 500}
+
+    # 获取用户头像
+    @jwt_required()
+    def get(self):
+        username = get_jwt_identity()
+        print("当前用户:", username)
+        # 从数据库中获取用户头像
+        user = User.query.filter(User.username == username).first()
+        img = user.img
+        print(img)
+        if img:
+            return {"code": 0, "msg": "获取用户头像成功", "data": {"img": img}}
+        else:
+            return {"msg": "获取用户头像失败，使用默认头像", "code": 400}
