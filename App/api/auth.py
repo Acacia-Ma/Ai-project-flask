@@ -26,10 +26,6 @@ class Login(Resource):
             return {"msg":"拒绝登录！", "code": 400}
         user = User.query.filter(User.username==username).first()
         print(user.username,user.password)
-        # if check_password_hash(password,user.password):
-        #     access_token = create_access_token(identity=username)
-        #     refresh_token = create_refresh_token(identity=username)
-        #     return {"msg":"Success Login","access_token":access_token,"refresh_token":refresh_token}
         if username == user.username and password == user.password:
             access_token = create_access_token(identity=username)
             refresh_token = create_refresh_token(identity=username)
@@ -44,15 +40,21 @@ class Register(Resource):
     def get(self):
         payload = get_jwt_identity()
         return {"msg":"注册成功","code":200,"payload":payload}
-
     # 注册
     def post(self):
+        # 获取表单数据
         form_data = request.json
         username = form_data.get('username')
-        realname = form_data.get('realname')
+        realname = form_data.get('name')
         password = form_data.get('password')
+        print(form_data)
+        # 检查真实姓名和密码是否为空
+        if not realname or not password:
+            return {"msg":"真实姓名和密码不能为空","code":400}
+        # 创建用户对象
         user = User()
         user.username = username
+        # 检查用户名是否存在
         if User.query.filter(User.username==username).first():
             return {"msg":"用户名已存在","code":400}
         user.realname = realname
@@ -94,7 +96,6 @@ class EditUser(Resource):
         password = form_data.get('password')
         password_old = form_data.get('password_old')
         print(username,realname,password,password_old)
-
         # 检查真实姓名和密码是否为空
         if not realname or not password:
             return {"msg": "真实姓名和原密码不能为空", "code": 400}

@@ -1,3 +1,4 @@
+from flask_jwt_extended import jwt_required
 from flask_restful import Resource
 from flask import request
 import requests
@@ -59,7 +60,7 @@ class MachineTranslationResource(Resource):
             }
             return json.dumps(post_data)
 
-
+    @jwt_required()
     def post(self):
         # 从请求中获取文件名
         data = request.get_json()

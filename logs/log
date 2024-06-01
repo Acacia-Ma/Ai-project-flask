@@ -9051,3 +9051,698 @@ INFO _internal.py:96 127.0.0.1 - - [04/Jan/2024 10:22:51] "GET /imgadownload/170
 INFO _internal.py:96 127.0.0.1 - - [04/Jan/2024 10:22:51] "GET /imgadownload/1704334909.jpg?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
 INFO _internal.py:96 127.0.0.1 - - [04/Jan/2024 10:22:51] "GET /imgadownload/1704334909.jpg?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
 INFO _internal.py:96 127.0.0.1 - - [04/Jan/2024 10:22:52] "[36mGET /imgadownload/1704334909.jpg?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO _internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:96 [33mPress CTRL+C to quit[0m
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [04/Jan/2024 10:38:06] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [04/Jan/2024 10:38:09] "GET /userimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [04/Jan/2024 10:38:09] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [04/Jan/2024 10:38:09] "GET /chathistory/1704001107144 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [04/Jan/2024 10:38:13] "GET /userimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [04/Jan/2024 10:38:13] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [04/Jan/2024 10:38:13] "GET /chathistory/1704001107144 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [04/Jan/2024 10:38:13] "[35m[1mGET /imgadownload/1704334909.jpg HTTP/1.1[0m" 500 -
+INFO _internal.py:96 127.0.0.1 - - [04/Jan/2024 10:38:51] "GET /userimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [04/Jan/2024 10:38:51] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [04/Jan/2024 10:38:51] "[35m[1mGET /imgadownload/1704334909.jpg HTTP/1.1[0m" 500 -
+INFO _internal.py:96 127.0.0.1 - - [04/Jan/2024 10:38:51] "GET /chathistory/1704001107144 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [04/Jan/2024 10:38:54] "GET /userimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [04/Jan/2024 10:38:54] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [04/Jan/2024 10:38:54] "GET /chathistory/1704001107144 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [04/Jan/2024 10:39:08] "GET /userimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [04/Jan/2024 10:39:08] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [04/Jan/2024 10:39:08] "GET /chathistory/1704001107144 HTTP/1.1" 200 -
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\api\\auth.py', reloading
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\api\\auth.py', reloading
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\api\\auth.py', reloading
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\api\\auth.py', reloading
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [04/Jan/2024 15:05:05] "POST /userinfo/ HTTP/1.1" 200 -
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\api\\Translator.py', reloading
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [04/Jan/2024 16:25:36] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [04/Jan/2024 16:25:36] "GET /userimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [04/Jan/2024 16:25:36] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [04/Jan/2024 16:25:36] "GET /chathistory/1704001107144 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [04/Jan/2024 16:34:04] "GET /chathistory/1704002168458 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [04/Jan/2024 16:34:05] "GET /chathistory/1704001107144 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [04/Jan/2024 16:34:06] "POST /userinfo/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [04/Jan/2024 16:36:29] "GET /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [04/Jan/2024 16:36:29] "GET /imgadownload/1703946675.png HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [04/Jan/2024 16:36:29] "GET /imgadownload/1704270945.png HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [04/Jan/2024 16:36:29] "GET /imgadownload/1703946689.png HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [04/Jan/2024 16:36:29] "GET /imgadownload/1704121329.jpg HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [04/Jan/2024 16:37:30] "POST /translation/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [04/Jan/2024 16:42:43] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [04/Jan/2024 16:42:43] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [04/Jan/2024 16:42:43] "GET /userimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [04/Jan/2024 16:42:43] "GET /chathistory/1704001107144 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [04/Jan/2024 16:42:52] "GET /chathistory/1704002168458 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [04/Jan/2024 16:42:53] "GET /chathistory/1704001107144 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [04/Jan/2024 16:42:53] "GET /chathistory/1704002168458 HTTP/1.1" 200 -
+INFO _internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:96 [33mPress CTRL+C to quit[0m
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [04/Jan/2024 21:21:04] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [04/Jan/2024 21:21:07] "GET /userimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [04/Jan/2024 21:21:07] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [04/Jan/2024 21:21:07] "GET /chathistory/1704001107144 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [04/Jan/2024 21:21:11] "GET /chathistory/1704002168458 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [04/Jan/2024 21:21:13] "GET /chathistory/1704001107144 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [04/Jan/2024 21:21:13] "GET /chathistory/1704002168458 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [04/Jan/2024 21:21:14] "GET /chathistory/1704001107144 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [04/Jan/2024 21:21:17] "GET /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [04/Jan/2024 21:21:17] "GET /imgadownload/1703946675.png HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [04/Jan/2024 21:21:17] "GET /imgadownload/1703946689.png HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [04/Jan/2024 21:21:17] "GET /imgadownload/1704121329.jpg HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [04/Jan/2024 21:21:17] "GET /imgadownload/1704270945.png HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [04/Jan/2024 21:21:31] "POST /uploadimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [04/Jan/2024 21:21:31] "GET /imgadownload/1704374491.jpg HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [04/Jan/2024 21:21:31] "POST /userimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [04/Jan/2024 21:21:33] "GET /userimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [04/Jan/2024 21:21:33] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [04/Jan/2024 21:21:33] "GET /chathistory/1704001107144 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [04/Jan/2024 21:21:33] "GET /imgadownload/1704374491.jpg HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [04/Jan/2024 21:21:41] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [04/Jan/2024 21:21:41] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [04/Jan/2024 21:21:41] "GET /userimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [04/Jan/2024 21:21:41] "GET /chathistory/1704001107144 HTTP/1.1" 200 -
+INFO _internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:96 [33mPress CTRL+C to quit[0m
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:96 [33mPress CTRL+C to quit[0m
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:08:27] "OPTIONS /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:08:27] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:08:27] "OPTIONS /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:08:27] "OPTIONS /userimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:08:27] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:08:28] "GET /userimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:08:28] "OPTIONS /chathistory/1704001107144 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:08:28] "GET /chathistory/1704001107144 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:08:31] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:08:31] "GET /imgadownload/1704374491.jpg HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:08:31] "GET /userimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:08:31] "GET /chathistory/1704001107144 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:08:38] "OPTIONS /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:08:38] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:08:38] "OPTIONS /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:08:38] "OPTIONS /userimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:08:38] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:08:39] "GET /userimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:08:39] "OPTIONS /chathistory/1704001107144 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:08:39] "GET /chathistory/1704001107144 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:08:43] "OPTIONS /chathistory/1704002168458 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:08:43] "GET /chathistory/1704002168458 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:08:45] "OPTIONS /chathistory/1704001107144 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:08:45] "GET /chathistory/1704001107144 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:08:47] "OPTIONS /userinfo/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:08:47] "POST /userinfo/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:08:49] "OPTIONS /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:08:49] "GET /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:08:49] "GET /imgadownload/1703946675.png HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:08:49] "GET /imgadownload/1703946689.png HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:08:49] "GET /imgadownload/1704270945.png HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:08:49] "GET /imgadownload/1704121329.jpg HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:09:03] "OPTIONS /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:09:03] "GET /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:28:22] "OPTIONS /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:28:22] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:28:22] "OPTIONS /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:28:23] "GET /imgadownload/1704374491.jpg HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:28:23] "OPTIONS /userimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:28:23] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:28:23] "GET /userimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:28:23] "OPTIONS /chathistory/1704001107144 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:28:23] "GET /chathistory/1704001107144 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:28:26] "OPTIONS /chathistory/1704002168458 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:28:26] "GET /chathistory/1704002168458 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:28:27] "GET /chathistory/1704001107144 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:28:29] "GET /chathistory/1704002168458 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:28:29] "OPTIONS /chathistory/1704001107144 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:28:30] "GET /chathistory/1704001107144 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:28:34] "OPTIONS /chatsession/1704001107144 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:28:34] "PUT /chatsession/1704001107144 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:31:04] "OPTIONS /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:31:04] "GET /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:31:04] "GET /imgadownload/1703946689.png HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:31:04] "GET /imgadownload/1703946675.png HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:31:04] "GET /imgadownload/1704121329.jpg HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:31:04] "GET /imgadownload/1704270945.png HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:31:05] "GET /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:31:07] "GET /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:31:10] "OPTIONS /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:31:10] "GET /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:31:10] "GET /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:31:14] "OPTIONS /chathistory/1704002168458 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:31:15] "GET /chathistory/1704002168458 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:31:15] "OPTIONS /chathistory/1704001107144 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:31:15] "GET /chathistory/1704001107144 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:31:15] "GET /chathistory/1704002168458 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:31:16] "GET /chathistory/1704001107144 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:31:16] "GET /chathistory/1704002168458 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:31:16] "GET /chathistory/1704001107144 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:31:17] "GET /chathistory/1704002168458 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:31:17] "GET /chathistory/1704001107144 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:31:20] "OPTIONS /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:31:20] "GET /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:31:24] "GET /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:31:36] "OPTIONS /uploadimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:31:36] "POST /uploadimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:31:36] "GET /imgadownload/1704418296.jpg HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:31:37] "OPTIONS /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:31:39] "POST /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:31:58] "OPTIONS /chatsession/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:31:58] "POST /chatsession/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:31:59] "OPTIONS /chathistory/1704418318439 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:31:59] "GET /chathistory/1704418318439 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:32:13] "OPTIONS /chathistory/undefined HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:32:14] "OPTIONS /chat/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:32:14] "POST /chathistory/undefined HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:32:20] "POST /chat/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:32:20] "OPTIONS /chathistory/undefined HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:32:20] "POST /chathistory/undefined HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:32:52] "OPTIONS /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:32:53] "GET /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:32:56] "GET /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:33:03] "OPTIONS /uploadimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:33:03] "POST /uploadimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:33:03] "OPTIONS /userimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:33:03] "GET /imgadownload/1704418383.jpg HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:33:03] "POST /userimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:33:07] "GET /imgadownload/1704418383.jpg HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:33:07] "GET /userimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:33:07] "OPTIONS /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:33:07] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:33:08] "OPTIONS /chathistory/1704001107144 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:33:08] "GET /chathistory/1704001107144 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:33:17] "OPTIONS /translation/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:33:18] "POST /translation/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:33:37] "OPTIONS /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:33:38] "GET /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:33:38] "GET /imgadownload/1703946675.png HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:33:38] "GET /imgadownload/1703946689.png HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:33:38] "GET /imgadownload/1704121329.jpg HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:33:38] "GET /imgadownload/1704270945.png HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:33:38] "GET /imgadownload/1704418296.jpg HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:33:43] "GET /imgadownload/1704418383.jpg HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:33:43] "OPTIONS /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:33:43] "OPTIONS /userimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:33:43] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:33:44] "GET /userimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:33:44] "OPTIONS /chathistory/1704001107144 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:33:44] "GET /chathistory/1704001107144 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:33:46] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:33:47] "GET /imgadownload/1704418383.jpg HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:33:47] "GET /userimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:33:47] "GET /chathistory/1704001107144 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:33:49] "OPTIONS /chathistory/1704002168458 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:33:49] "GET /chathistory/1704002168458 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:33:50] "OPTIONS /chathistory/1704001107144 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:33:51] "GET /chathistory/1704001107144 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:33:53] "GET /chathistory/1704002168458 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:33:55] "GET /chathistory/1704001107144 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:33:57] "OPTIONS /chathistory/1704002168458 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:33:57] "GET /chathistory/1704002168458 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:33:58] "OPTIONS /chathistory/1704001107144 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:33:58] "GET /chathistory/1704001107144 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:34:02] "OPTIONS /chathistory/1704418318439 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:34:02] "GET /chathistory/1704418318439 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:34:03] "OPTIONS /chathistory/1704002168458 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:34:03] "GET /chathistory/1704002168458 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:34:04] "GET /chathistory/1704002168458 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:34:05] "OPTIONS /chatsession/1704002168458 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:34:05] "DELETE /chatsession/1704002168458 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:34:06] "GET /chathistory/1704418318439 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:34:07] "OPTIONS /chatsession/1704418318439 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:34:08] "DELETE /chatsession/1704418318439 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:34:11] "OPTIONS /logout/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:34:11] "POST /logout/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:34:22] "OPTIONS /register/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:34:23] "POST /register/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:34:34] "OPTIONS /register/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:34:35] "POST /register/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:35:12] "OPTIONS /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:35:12] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:35:13] "OPTIONS /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:35:13] "OPTIONS /userimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:35:13] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:35:13] "GET /userimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:35:13] "OPTIONS /chathistory/1704001107144 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:35:13] "GET /chathistory/1704001107144 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:35:33] "GET /imgadownload/1704418383.jpg HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:35:33] "OPTIONS /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:35:33] "OPTIONS /userimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:35:33] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:35:33] "OPTIONS /chathistory/1704001107144 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:35:34] "GET /userimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:35:34] "GET /chathistory/1704001107144 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:35:40] "OPTIONS /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:35:40] "OPTIONS /userimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:35:40] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:35:41] "OPTIONS /chathistory/1704001107144 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:35:41] "GET /userimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:35:41] "GET /chathistory/1704001107144 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:35:44] "OPTIONS /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:35:44] "GET /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:35:44] "GET /imgadownload/1703946675.png HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:35:44] "GET /imgadownload/1703946689.png HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:35:44] "GET /imgadownload/1704121329.jpg HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:35:44] "GET /imgadownload/1704270945.png HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:35:44] "GET /imgadownload/1704418296.jpg HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:35:45] "GET /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:35:47] "GET /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:35:47] "GET /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:35:48] "GET /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:35:48] "GET /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:35:57] "OPTIONS /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:35:57] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:35:57] "OPTIONS /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:35:58] "OPTIONS /userimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:35:58] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:35:58] "OPTIONS /chathistory/1704001107144 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:35:58] "GET /userimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:35:58] "GET /chathistory/1704001107144 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:36:02] "OPTIONS /uploadimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:36:02] "POST /uploadimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:36:03] "OPTIONS /userimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:36:03] "GET /imgadownload/1704418562.jpg HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:36:03] "POST /userimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:36:29] "OPTIONS /chathistory/undefined HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:36:29] "OPTIONS /chat/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:36:29] "POST /chathistory/undefined HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:36:46] "POST /chat/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:36:47] "OPTIONS /chathistory/undefined HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:36:47] "POST /chathistory/undefined HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:37:01] "OPTIONS /chatsession/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:37:01] "POST /chatsession/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:37:02] "OPTIONS /chathistory/1704418621322 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:37:02] "GET /chathistory/1704418621322 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:37:02] "OPTIONS /chathistory/1704001107144 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:37:03] "GET /chathistory/1704001107144 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:37:16] "OPTIONS /logout/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:37:16] "POST /logout/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:37:20] "OPTIONS /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:37:21] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:37:21] "OPTIONS /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:37:21] "OPTIONS /userimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:37:21] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:37:21] "GET /userimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:37:25] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:37:25] "GET /userimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:37:56] "OPTIONS /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:37:56] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:37:57] "OPTIONS /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:37:57] "OPTIONS /userimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:37:57] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:37:57] "GET /userimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:38:11] "OPTIONS /chatsession/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:38:11] "POST /chatsession/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:38:12] "OPTIONS /chathistory/1704418691440 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:38:12] "GET /chathistory/1704418691440 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:38:12] "OPTIONS /chathistory/undefined HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:38:12] "OPTIONS /chat/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:38:12] "POST /chathistory/undefined HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:38:13] "POST /chat/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:38:13] "POST /chathistory/undefined HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:38:24] "OPTIONS /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:38:24] "GET /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:38:33] "OPTIONS /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:38:34] "GET /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:38:36] "GET /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:38:38] "GET /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:38:41] "OPTIONS /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:38:41] "GET /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:38:44] "GET /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:38:57] "OPTIONS /uploadimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:38:57] "POST /uploadimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:38:57] "GET /imgadownload/1704418737.png HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:38:58] "OPTIONS /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:38:59] "POST /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:39:02] "GET /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:39:04] "OPTIONS /userinfo/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:39:04] "POST /userinfo/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:39:06] "POST /userinfo/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:39:09] "POST /userinfo/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:39:22] "OPTIONS /edituser/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:39:23] "POST /edituser/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:39:26] "OPTIONS /userinfo/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:39:27] "POST /userinfo/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:39:33] "OPTIONS /edituser/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:39:33] "POST /edituser/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:39:36] "OPTIONS /logout/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:39:36] "POST /logout/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:39:42] "OPTIONS /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:39:42] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:39:42] "OPTIONS /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:39:42] "OPTIONS /userimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:39:42] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:39:43] "GET /userimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:39:43] "OPTIONS /chathistory/1704418691440 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:39:43] "GET /chathistory/1704418691440 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:39:46] "OPTIONS /userinfo/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:39:46] "POST /userinfo/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:39:59] "OPTIONS /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:40:00] "GET /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:40:00] "GET /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:40:01] "GET /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:41:05] "OPTIONS /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:41:05] "GET /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:41:13] "OPTIONS /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:41:13] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:41:14] "OPTIONS /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:41:14] "OPTIONS /userimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:41:14] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:41:14] "GET /userimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:41:14] "OPTIONS /chathistory/1704001107144 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:41:14] "GET /chathistory/1704001107144 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:41:15] "OPTIONS /chathistory/1704418621322 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:41:16] "GET /chathistory/1704418621322 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:41:17] "GET /chathistory/1704001107144 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:41:18] "GET /chathistory/1704418621322 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:41:19] "OPTIONS /userinfo/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:41:20] "POST /userinfo/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:41:29] "OPTIONS /translation/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:41:29] "POST /translation/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:41:34] "OPTIONS /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:41:35] "GET /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:96 [33mPress CTRL+C to quit[0m
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:43:36] "POST /register/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:45:11] "POST /register/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:51:08] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:51:11] "GET /userimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:51:11] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:51:11] "GET /chathistory/1704001107144 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:51:17] "GET /chathistory/1704418621322 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:51:17] "GET /chathistory/1704001107144 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:58:29] "GET /chathistory/1704418621322 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:58:30] "GET /chathistory/1704001107144 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:58:32] "GET /userimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:58:32] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:58:32] "GET /chathistory/1704001107144 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:58:32] "GET /imgadownload/1704418562.jpg HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:58:39] "GET /chathistory/1704418621322 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:58:39] "GET /chathistory/1704001107144 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:58:40] "GET /chathistory/1704418621322 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 09:58:40] "GET /chathistory/1704001107144 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 10:00:42] "POST /logout/ HTTP/1.1" 200 -
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\api\\auth.py', reloading
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 10:01:17] "POST /register/ HTTP/1.1" 200 -
+INFO _internal.py:96  * Detected change in 'D:\\Ai-Project\\Ai-project-flask\\App\\api\\auth.py', reloading
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 10:02:45] "POST /register/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 10:02:56] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 10:02:56] "GET /userimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 10:02:56] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 10:02:56] "GET /chathistory/1704418691440 HTTP/1.1" 200 -
+INFO _internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:96 [33mPress CTRL+C to quit[0m
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:12:12] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:12:16] "GET /userimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:12:16] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:12:16] "GET /chathistory/1704001107144 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:12:19] "GET /chathistory/1704418621322 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:12:20] "GET /chathistory/1704001107144 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:12:23] "GET /userimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:12:23] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:12:23] "GET /chathistory/1704001107144 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:12:23] "GET /imgadownload/1704418562.jpg HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:12:26] "GET /chathistory/1704418621322 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:12:26] "GET /chathistory/1704001107144 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:12:58] "POST /register/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:13:06] "POST /register/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:13:18] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:13:18] "GET /imgadownload/1704418562.jpg HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:13:18] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:13:18] "GET /userimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:13:27] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:13:27] "GET /userimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:15:39] "POST /register/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:15:44] "POST /register/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:16:08] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:16:09] "GET /userimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:16:09] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:16:09] "GET /chathistory/1704418691440 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:16:21] "POST /uploadimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:16:21] "POST /userimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:16:21] "GET /imgadownload/1704449781.jpg HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:16:25] "GET /imgadownload/1704449781.jpg HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:16:25] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:16:25] "GET /userimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:16:25] "GET /chathistory/1704418691440 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:16:34] "POST /chatsession/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:18:26] "POST /register/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:18:29] "POST /register/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:18:33] "POST /register/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:18:37] "POST /register/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:18:56] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:18:56] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:18:56] "GET /imgadownload/1704449781.jpg HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:18:56] "GET /userimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:19:07] "POST /uploadimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:19:07] "GET /imgadownload/1704449947.png HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:19:08] "POST /userimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:19:11] "POST /userinfo/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:19:19] "POST /edituser/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:19:22] "POST /userinfo/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:19:37] "POST /edituser/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:19:39] "POST /userinfo/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:19:45] "POST /edituser/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:19:54] "POST /chatsession/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:19:54] "GET /chathistory/1704449994061 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:19:54] "POST /chathistory/undefined HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:19:55] "POST /chat/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:19:55] "POST /chathistory/undefined HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:20:12] "POST /chathistory/undefined HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:20:17] "POST /chat/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:20:17] "POST /chathistory/undefined HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:20:44] "POST /chatsession/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:20:45] "GET /chathistory/1704450044375 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:20:46] "GET /chathistory/1704449994061 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:20:46] "GET /chathistory/1704450044375 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:20:47] "POST /chatsession/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:20:48] "GET /chathistory/1704449994061 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:20:49] "GET /chathistory/1704450044375 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:20:49] "GET /chathistory/1704450047647 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:20:50] "GET /chathistory/1704450044375 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:20:50] "GET /chathistory/1704449994061 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:20:54] "PUT /chatsession/1704449994061 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:20:55] "GET /chathistory/1704450044375 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:21:01] "PUT /chatsession/1704450044375 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:21:02] "GET /chathistory/1704449994061 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:21:03] "GET /chathistory/1704450044375 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:21:04] "GET /userimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:21:04] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:21:04] "GET /chathistory/1704449994061 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:21:04] "GET /imgadownload/1704449947.png HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:21:06] "GET /chathistory/1704450044375 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:21:07] "GET /chathistory/1704449994061 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:21:07] "GET /chathistory/1704450044375 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:21:08] "GET /chathistory/1704450047647 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:21:08] "GET /chathistory/1704450044375 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:21:08] "GET /chathistory/1704449994061 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:21:09] "GET /chathistory/1704450044375 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:21:10] "GET /chathistory/1704450044375 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:21:11] "DELETE /chatsession/1704450044375 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:21:17] "GET /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:21:24] "POST /logout/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:21:30] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:21:30] "GET /userimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:21:30] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:21:30] "GET /chathistory/1704001107144 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:21:34] "POST /userinfo/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:21:36] "GET /chathistory/1704418621322 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:21:37] "GET /chathistory/1704001107144 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:21:40] "GET /chathistory/1704418621322 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:21:40] "GET /chathistory/1704001107144 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:21:44] "POST /uploadimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:21:44] "GET /imgadownload/1704450104.jpg HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:21:44] "POST /userimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:21:47] "GET /chathistory/1704418621322 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:21:47] "GET /chathistory/1704001107144 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:21:52] "GET /chathistory/1704418621322 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:21:54] "GET /chathistory/1704001107144 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:21:59] "GET /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:21:59] "GET /imgadownload/1703946675.png HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:21:59] "GET /imgadownload/1703946689.png HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:21:59] "GET /imgadownload/1704121329.jpg HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:21:59] "GET /imgadownload/1704270945.png HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:21:59] "GET /imgadownload/1704418296.jpg HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:22:19] "POST /uploadimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:22:19] "GET /imgadownload/1704450139.png HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:22:21] "POST /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:22:53] "POST /translation/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:23:18] "POST /translation/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:25:25] "POST /register/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:25:34] "POST /register/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:25:54] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:25:54] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:25:54] "GET /userimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:26:08] "POST /uploadimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:26:09] "POST /userimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:26:09] "GET /imgadownload/1704450368.png HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:26:12] "GET /imgadownload/1704450368.png HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:26:12] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:26:12] "GET /userimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:26:14] "GET /userimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:26:14] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:26:15] "GET /imgadownload/1704450368.png HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:26:19] "POST /userinfo/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:26:26] "POST /edituser/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:26:29] "POST /userinfo/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:26:35] "POST /edituser/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:26:38] "POST /userinfo/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:26:44] "POST /edituser/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:27:01] "POST /chatsession/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:27:02] "GET /chathistory/1704450421823 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:27:02] "POST /chathistory/undefined HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:27:03] "POST /chat/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:27:03] "POST /chathistory/undefined HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:27:16] "POST /chathistory/undefined HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:27:22] "POST /chat/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:27:22] "POST /chathistory/undefined HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:27:54] "POST /userinfo/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:27:58] "POST /chatsession/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:27:59] "POST /chatsession/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:28:00] "GET /chathistory/1704450478192 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:28:01] "GET /chathistory/1704450478858 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:28:01] "GET /chathistory/1704450478192 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:28:02] "GET /chathistory/1704450421823 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:28:08] "GET /chathistory/1704450478192 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:28:09] "GET /chathistory/1704450421823 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:28:16] "PUT /chatsession/1704450421823 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:28:18] "GET /chathistory/1704450478192 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:28:18] "GET /chathistory/1704450421823 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:28:18] "GET /chathistory/1704450478192 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:28:18] "GET /chathistory/1704450478858 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:28:19] "GET /chathistory/1704450478192 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:28:19] "GET /chathistory/1704450421823 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:28:20] "GET /chathistory/1704450478192 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:28:21] "GET /chathistory/1704450421823 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:28:21] "GET /chathistory/1704450478192 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:28:22] "GET /chathistory/1704450478192 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:28:23] "DELETE /chatsession/1704450478192 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:28:24] "GET /chathistory/1704450478858 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:28:31] "GET /chathistory/1704450421823 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:28:34] "GET /chathistory/1704450478858 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:28:35] "GET /chathistory/1704450421823 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:28:39] "GET /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:28:44] "POST /uploadimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:28:44] "GET /imgadownload/1704450524.png HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:28:46] "POST /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:28:56] "POST /uploadimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:28:56] "GET /imgadownload/1704450536.png HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:28:58] "POST /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:29:15] "GET /userimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:29:15] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:29:15] "GET /chathistory/1704450421823 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:29:16] "GET /imgadownload/1704450368.png HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:29:16] "GET /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:29:16] "GET /imgadownload/1704450524.png HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:29:17] "GET /imgadownload/1704450536.png HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:29:40] "POST /translation/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:30:27] "GET /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:30:27] "GET /imgadownload/1704450524.png HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:30:27] "GET /imgadownload/1704450536.png HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:30:28] "GET /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:30:28] "GET /imgadownload/1704450368.png HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:30:34] "GET /chathistory/1704450478858 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:30:34] "GET /chathistory/1704450421823 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:30:34] "GET /chathistory/1704450478858 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:30:35] "GET /chathistory/1704450421823 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:30:35] "GET /chathistory/1704450478858 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:30:35] "GET /chathistory/1704450421823 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:30:35] "GET /chathistory/1704450478858 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:30:39] "POST /userinfo/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:30:40] "GET /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:30:40] "GET /imgadownload/1704450524.png HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:30:40] "GET /imgadownload/1704450536.png HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:30:52] "GET /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:30:52] "GET /imgadownload/1704450368.png HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [05/Jan/2024 18:30:56] "POST /logout/ HTTP/1.1" 200 -
+INFO _internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:96 [33mPress CTRL+C to quit[0m
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 132-469-649
+INFO _internal.py:96 127.0.0.1 - - [10/Jan/2024 17:58:04] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [10/Jan/2024 17:58:10] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [10/Jan/2024 17:58:10] "GET /userimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [10/Jan/2024 17:58:10] "GET /chathistory/1704001107144 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [10/Jan/2024 17:58:14] "GET /userimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [10/Jan/2024 17:58:14] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [10/Jan/2024 17:58:14] "GET /chathistory/1704001107144 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [10/Jan/2024 17:58:14] "GET /imgadownload/1704450104.jpg HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [10/Jan/2024 17:58:23] "GET /imgadownload/1704450104.jpg HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [10/Jan/2024 17:58:23] "GET /userimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [10/Jan/2024 17:58:23] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [10/Jan/2024 17:58:23] "GET /chathistory/1704001107144 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [10/Jan/2024 17:58:33] "GET /chathistory/1704418621322 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [10/Jan/2024 17:58:33] "GET /chathistory/1704001107144 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [10/Jan/2024 17:58:35] "POST /userinfo/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [10/Jan/2024 17:58:42] "POST /uploadimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [10/Jan/2024 17:58:42] "POST /userimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [10/Jan/2024 17:58:42] "GET /imgadownload/1704880722.png HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [10/Jan/2024 17:58:56] "POST /chathistory/undefined HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [10/Jan/2024 17:58:56] "POST /chat/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [10/Jan/2024 17:59:03] "POST /chathistory/undefined HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [10/Jan/2024 17:59:06] "POST /chat/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [10/Jan/2024 17:59:06] "POST /chathistory/undefined HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [10/Jan/2024 17:59:36] "POST /chathistory/undefined HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [10/Jan/2024 17:59:44] "POST /chat/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [10/Jan/2024 17:59:44] "POST /chathistory/undefined HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [10/Jan/2024 18:00:08] "GET /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [10/Jan/2024 18:00:08] "GET /imgadownload/1704270945.png HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [10/Jan/2024 18:00:08] "GET /imgadownload/1703946675.png HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [10/Jan/2024 18:00:08] "GET /imgadownload/1703946689.png HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [10/Jan/2024 18:00:08] "GET /imgadownload/1704121329.jpg HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [10/Jan/2024 18:00:08] "GET /imgadownload/1704418296.jpg HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [10/Jan/2024 18:00:08] "GET /imgadownload/1704450139.png HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [10/Jan/2024 18:00:17] "POST /uploadimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [10/Jan/2024 18:00:18] "GET /imgadownload/1704880817.png HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [10/Jan/2024 18:00:22] "POST /uploadimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [10/Jan/2024 18:00:22] "GET /imgadownload/1704880822.png HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [10/Jan/2024 18:00:48] "POST /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [10/Jan/2024 18:00:56] "GET /chathistory/1704418621322 HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [10/Jan/2024 18:00:56] "GET /chathistory/1704001107144 HTTP/1.1" 200 -
