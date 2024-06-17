@@ -88,7 +88,7 @@ class AutoFunctionGenerator:
                             "在'description'字段."
                             "6. 识别函数声明中哪些参数是必需的，然后在'parameters'字段的'required'字段中列出"
                             "这些参数. "
-                            "7. 输出的应仅为符合上述要求的JSON Schema对象内容,不需要任何上下文修饰语句,仅包含JSON Schema对象内容，只要纯代码，不要有任何注释。" % function_name
+                            "7. 输出的应仅为符合上述要求的JSON Schema对象内容,不需要任何上下文修饰语句,仅包含JSON Schema对象内容，只要纯代码，不要有任何注释。"
                             )
             messages = [
                 {
@@ -101,14 +101,22 @@ class AutoFunctionGenerator:
                 }
             ]
             response = self._call_openai_api(messages)
-            # strip() 方法用于移除字符串头尾指定的字符（默认为空格或换行符）或字符序列
-            # response_content = response.choices[0].message.content.strip()
+            response_content = response.choices[0].message.content.strip()
 
             # 打印响应内容用于调试
-            # print("response:", response)
-            # print(response.choices[0].message.content)
-            functions.append(json.loads(response.choices[0].message.content[7:-3]))
-            print("functions:", functions)
+            print("response_content:", response_content)
+
+            try:
+                # 尝试解析响应内容
+                response_content = response_content.split('```json\n')[1].split('\n```')[0].strip()
+                function_schema = json.loads(response_content)
+                functions.append(function_schema)
+                print("functions:", functions)
+            except json.JSONDecodeError as e:
+                # 捕获 JSON 解析错误并打印详细信息
+                print("JSONDecodeError:", e)
+                print("Failed response content:", response_content)
+
         return functions
 
     def _call_openai_api(self, messages):
@@ -226,7 +234,8 @@ if __name__ == '__main__':
     generator = AutoFunctionGenerator(functions_list)
     # 生成函数描述
     functions_description = generator.auto_generate()
-    # 打印生成的函数描述
+    # 打印生成的函数描述,换行输出
     print("最后的的结果为:")
-    # print(functions_description)
-    pprint(functions_description)
+    for function_description in functions_description:
+        pprint(function_description)
+        print("\n")

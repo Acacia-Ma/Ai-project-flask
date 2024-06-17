@@ -20,6 +20,10 @@ client = OpenAI(
     api_key="dae4b7d3a476814fa8938ee5183045af.9UDOI9jvUOcpkHx2",  # 你自己的api key
     base_url="https://open.bigmodel.cn/api/paas/v4/"
 )
+# client = OpenAI(
+#     api_key="dae4b7d3a476814fa8938ee5183045af.9UDOI9jvUOcpkHx2",  # 你自己的api key
+#     base_url="http://10.203.81.196:41739/v1/"
+# )
 
 
 def zhipu_api_open(messages: list):
@@ -131,7 +135,7 @@ def zhipu_api(messages: list):
         max_tokens=2000,
         tools=tools,
         # 可以不设置
-        # tool_choice="auto",
+        tool_choice="auto",
     )
     print(response.choices[0].message.content)
     # 保存交互过程中的关键信息
@@ -172,5 +176,5 @@ if __name__ == '__main__':
             "content": "请在数据集input_json上执行计算所有人年龄总和函数"
         }
     ]
-    # zhipu_api_open(messages)
+    zhipu_api_open(messages)
     zhipu_api(messages)
