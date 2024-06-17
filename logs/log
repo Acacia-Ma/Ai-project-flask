@@ -9746,3 +9746,34 @@ INFO _internal.py:96 127.0.0.1 - - [10/Jan/2024 18:00:22] "GET /imgadownload/170
 INFO _internal.py:96 127.0.0.1 - - [10/Jan/2024 18:00:48] "POST /imgaresult/ HTTP/1.1" 200 -
 INFO _internal.py:96 127.0.0.1 - - [10/Jan/2024 18:00:56] "GET /chathistory/1704418621322 HTTP/1.1" 200 -
 INFO _internal.py:96 127.0.0.1 - - [10/Jan/2024 18:00:56] "GET /chathistory/1704001107144 HTTP/1.1" 200 -
+INFO _internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:96 [33mPress CTRL+C to quit[0m
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 324-897-112
+INFO _internal.py:96 127.0.0.1 - - [02/Jun/2024 22:43:48] "[33mGET / HTTP/1.1[0m" 404 -
+INFO _internal.py:96 127.0.0.1 - - [02/Jun/2024 22:43:48] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO _internal.py:96 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:96 [33mPress CTRL+C to quit[0m
+INFO _internal.py:96  * Restarting with stat
+WARNING _internal.py:96  * Debugger is active!
+INFO _internal.py:96  * Debugger PIN: 324-897-112
+INFO _internal.py:96 127.0.0.1 - - [15/Jun/2024 15:15:43] "[35m[1mPOST /login/ HTTP/1.1[0m" 500 -
+INFO _internal.py:96 127.0.0.1 - - [15/Jun/2024 15:16:04] "POST /register/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [15/Jun/2024 15:16:13] "POST /login/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [15/Jun/2024 15:16:17] "GET /userimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [15/Jun/2024 15:16:17] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [15/Jun/2024 15:17:30] "GET /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [15/Jun/2024 15:17:33] "POST /uploadimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [15/Jun/2024 15:17:34] "GET /imgadownload/1718435853.jpg HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [15/Jun/2024 15:17:36] "POST /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [15/Jun/2024 15:19:38] "GET /chatsessions/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [15/Jun/2024 15:19:38] "GET /userimg/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [15/Jun/2024 15:19:40] "GET /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [15/Jun/2024 15:19:54] "POST /translation/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [15/Jun/2024 15:19:57] "GET /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [15/Jun/2024 15:20:00] "GET /imgaresult/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [15/Jun/2024 15:20:05] "POST /userinfo/ HTTP/1.1" 200 -
+INFO _internal.py:96 127.0.0.1 - - [15/Jun/2024 15:20:08] "GET /imgaresult/ HTTP/1.1" 200 -
