@@ -107,8 +107,10 @@ class AutoFunctionGenerator:
             # 打印响应内容用于调试
             # print("response:", response)
             # print(response.choices[0].message.content)
+            # print('---------------3',response.choices[0].message.content)
             functions.append(json.loads(response.choices[0].message.content[7:-3]))
-            print("functions:", functions)
+            # print('---------------------4')
+            # print("functions:", functions)
         return functions
 
     def _call_openai_api(self, messages):
@@ -176,8 +178,8 @@ def calculate_total_age_function(input_json):
     # 计算年龄总和
     total_age = df['Age'].sum()
     # 将计算结果转换为JSON字符串
-    result = json.dumps({'total_age': str(total_age)})
-    return result
+    return json.dumps({"total_age": str(total_age)})
+
 
 # 测试函数
 def calculate_married_count(input_json):

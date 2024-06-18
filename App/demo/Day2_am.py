@@ -68,12 +68,17 @@ class ChatConversation:
             # tools 一开始并没有定义，所以这里需要定义一下
             params["tools"] = functions
         try:
-            # **params 用于解包字典
-            # print(params)
+            # 假设 params 是正确的
             response = client_zhipu.chat.completions.create(**params)
             return response
+        except ValueError as ve:
+            print(f"捕获到ValueError: {ve}")
+            return None
+        except TypeError as te:
+            print(f"捕获到TypeError: {te}")
+            return None
         except Exception as e:
-            print(f"这里有一个错误: {e}")
+            print(f"这里有一个未预料到的错误: {e}")
             return None
 
     def run(self, functions_list=None):
@@ -98,6 +103,7 @@ class ChatConversation:
                 self.add_functions(functions_list)
                 # 如果传人了外部功能函数列表，先生成每个功能函数对应的 JSON Schema 描述
                 functions = AutoFunctionGenerator(functions_list).auto_generate()
+
                 # functions =[{'type': 'function', 'function': {'name': 'calculate_total_age_function',
                 # 'description': '从给定的JSON格式字符串中解析出DataFrame，计算所有人的年龄总和，并以JSON格式返回结果。', 'parameters': {'type':
                 # 'object', 'properties': {'input_json': {'description': '含有个体年龄数据的JSON格式字符串', 'type': 'string'}},
@@ -112,7 +118,9 @@ class ChatConversation:
                 # '始发地', 'type': 'string'}, 'destination': {'description': '目的地', 'type': 'string'}}, 'required': [
                 # 'data', 'departure', 'destination']}, 'returns': {'description': '查询到的航班号，返回结果为JSON字符串类型对象',
                 # 'type': 'string'}}}]
+
                 # print("functions:", functions)
+
                 # 模型对话分为两个阶段，第一阶段是调用 OpenAI 大模型 进行聊天对话，第二阶段是调用外部功能函数，自动调用功能函数，并将结果返回给用户
                 # 第一阶段
                 response = self._call_chat_model(functions, include_functions=True)
@@ -157,7 +165,6 @@ class ChatConversation:
                     self.messages.append(response_message.model_dump())
 
                     # message中拼接 function_response
-                    # print('------------7',function_response)
                     self.messages.append({
                         "role": "tool",
                         "content": function_response,
@@ -168,8 +175,6 @@ class ChatConversation:
                     second_response = self._call_chat_model(functions=functions, include_functions=True)
 
                     # 获取最后的对话结果
-                    # print('------2', second_response)
-                    # print('-----3',second_response.choices[0])
                     final_response = second_response.choices[0].message.content
                     # 打印输出查看最后的对话结果
                     # print(f"final_response_tools:{final_response}\n")
@@ -252,6 +257,9 @@ if __name__ == "__main__":
         }
     ]
     # 调用run方法处理对话，并获取最终的对话结果(响应)
-    # chat_conversation.run(functions_list=functions_list)
+    # response = chat_conversation.run(functions_list=functions_list)
+    # # 打印输出查看最终的对话结果(响应)
+    # print(f"模型响应: {response}\n")
+
     # chat_with_assistant 函数用于与助手进行对话
     chat_with_assistant(functions_list=functions_list)
