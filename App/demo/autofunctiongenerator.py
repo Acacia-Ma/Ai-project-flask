@@ -4,7 +4,7 @@ import pandas as pd
 from zhipuai import ZhipuAI
 from pprint import pprint
 client_zhipu = ZhipuAI(api_key="dae4b7d3a476814fa8938ee5183045af.9UDOI9jvUOcpkHx2")  # 你自己的api key
-
+from functionsList import calculate_total_age_function, calculate_married_count, get_flight_number,fetch_latest_qqemail_content,send_email
 
 # AutoFunctionGenerator 类用于自动生成一系列功能函数的 JSON Schema 描述。
 class AutoFunctionGenerator:
@@ -163,66 +163,9 @@ class AutoFunctionGenerator:
                     continue
 
 
-# 定义消息列表
-def calculate_total_age_function(input_json):
-    """
-    从给定的JSON格式字符串（按'split'方向排列）中解析出DataFrame，计算所有人的年龄总和，并以JSON格式返回结果。
-    参数:
-    input_json(str): 含有个体年龄数据的JSON格式字符串
-    返回:
-    str: 计算完成后的所有人年龄总和，返回结果为JSON字符串类型对象
-    """
-
-    # 将JSON字符串转换为DataFrame
-    df = pd.read_json(input_json, orient='split')
-    # 计算年龄总和
-    total_age = df['Age'].sum()
-    # 将计算结果转换为JSON字符串
-    return json.dumps({"total_age": str(total_age)})
 
 
-# 测试函数
-def calculate_married_count(input_json):
-    """
-    从给定的JSON格式字符串（按'split'方向排列）中解析出DataFrame，计算所有已婚人数，并以JSON格式返回结果。
-    参数:
-    input_json(str): 含有个体年龄数据的JSON格式字符串
-    返回:
-    str: 计算完成后的所有已婚人数，返回结果为JSON字符串类型对象
-    """
-
-    # 将JSON字符串转换为DataFrame
-    df = pd.read_json(input_json, orient='split')
-    # 计算已婚人数
-    married_count = df[df['IsMarried'] == True].shape[0]
-    # 将计算结果转换为JSON字符串
-    return json.dumps({'married_count': str(married_count)})
-
-
-def get_flight_number(data: str, departure: str, destination: str):
-    """
-    从给定的JSON格式字符串（按'split'方向排列）中解析出DataFrame，根据始发地，目的地和日期，查询对应的航班号，并以JSON格式返回结果。
-    参数:
-    data (str): 出发日期
-    departure (str): 始发地
-    destination (str): 目的地
-    返回:
-    str: 查询到的航班号，返回结果为JSON字符串类型对象
-    """
-    flight_number = {
-        "北京": {
-            "上海": "1234",
-            "广州": "8321",
-        },
-        "上海": {
-            "北京": "1233",
-            "广州": "8123",
-        }
-    }
-    return json.dumps({"flight_number": flight_number[departure][destination]})
-
-
-functions_list = [calculate_total_age_function, calculate_married_count, get_flight_number]
+functions_list = [calculate_total_age_function, calculate_married_count, get_flight_number, fetch_latest_qqemail_content, send_email]
 if __name__ == '__main__':
     # 创建函数生成器对象
     generator = AutoFunctionGenerator(functions_list)
@@ -230,5 +173,6 @@ if __name__ == '__main__':
     functions_description = generator.auto_generate()
     # 打印生成的函数描述
     print("最后的的结果为:")
-    # print(functions_description)
+    print(functions_description)
+    print("格式化显示如下:")
     pprint(functions_description)

@@ -1,11 +1,15 @@
 # 定义消息列表
 import json
+import poplib
 import smtplib
 from email.header import Header
 from email.mime.text import MIMEText
+from email.parser import BytesParser
+import email.header as jiexi
 from io import StringIO
 
 import pandas as pd
+
 
 # 定义函数
 def calculate_total_age_function(input_json):
@@ -65,7 +69,58 @@ def get_flight_number(data: str, departure: str, destination: str):
     }
     return json.dumps({"flight_number": flight_number[departure][destination]})
 
-def send_email(user_from,user_pass,user_to,subject,message_text):
+
+
+def fetch_latest_qqemail_content(user_email='912811339@qq.com', user_pass='blaxffzvxczfbfhh'):
+    """
+    查询指定用户的qq邮箱中的最后一封邮件的内容
+
+    参数:
+    user_email (str): 必要参数,表示需要查询的qq邮箱的用户邮箱，注意，如果查询的是自己的邮箱，user_email需设置为'912811339@qq.com'。
+    user_pass (str): 必要参数,表示需要查询的qq邮箱的用户码，注意，如果查询的是自己的邮箱，user_pass需设置为'blaxffzvxczfbfhh'。
+    返回:
+    str: 返回最后一封邮件全部信息的JSON格式字符串。该对象由qq邮箱API创建并返回。如果查询失败，返回包含错误信息的JSON格式字符串。
+    """
+
+    try:
+        # 连接到POP3服务器
+        pop_server = poplib.POP3_SSL('pop.qq.com', 995)
+        pop_server.user(user_email)
+        pop_server.pass_(user_pass)
+
+        # 获取邮箱中的邮件信息
+        num_emails = len(pop_server.list()[1])
+        if num_emails > 0:
+            # 获取邮件内容
+            response, lines, octets = pop_server.retr(num_emails)
+            email_content = b'\r\n'.join(lines)
+
+            # 解析邮件内容
+            email_parser = BytesParser()
+            email_msg = email_parser.parsebytes(email_content)
+
+            # 解析邮件头部信息
+            email_from = email_msg.get('From').strip()
+            email_from = str(jiexi.make_header(jiexi.decode_header(email_from)))
+
+            # 解析邮件主题
+            subject = email_msg.get('Subject').strip()
+            decoded_subject = str(jiexi.make_header(jiexi.decode_header(subject))) if subject else None
+
+            # 关闭连接
+            pop_server.quit()
+
+            return json.dumps({"发件人": email_from, "主题": decoded_subject,}, ensure_ascii=False)
+        else:
+            return json.dumps({"error": "邮箱中没有邮件"})
+
+    except poplib.error_proto as e:
+        return json.dumps({"error": f"POP3协议错误: {str(e)}"}, ensure_ascii=False)
+    except Exception as e:
+        return json.dumps({"error": f"未知错误: {str(e)}"}, ensure_ascii=False)
+
+
+def send_email(user_from, user_pass, user_to, subject, message_text):
     """
     借助QQ邮箱 API创建并发送邮件函数
     :param user_to: 必要参数，字符串类型，用于表示邮件发送的目标邮箱地址；
@@ -101,3 +156,7 @@ def send_email(user_from,user_pass,user_to,subject,message_text):
     except Exception as e:
         print('邮件发送失败')
         return json.dumps({'status': 'failed'})
+
+
+if __name__ == '__main__':
+    print(fetch_latest_qqemail_content('912811339@qq.com', 'blaxffzvxczfbfhh'))

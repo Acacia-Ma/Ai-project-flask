@@ -397,14 +397,14 @@ if __name__ == "__main__":
 
     conv = ChatConversation()
     conv.messages = [
-        {
-            "role": "user",
-            "content": '请帮我查询下最近一封QQ邮箱的内容并解读它，user_email为"912811339@qq.com"，user_pass为"blaxffzvxczfbfhh"'
-        }
         # {
         #     "role": "user",
-        #     "content": "我要使用QQ邮箱给我的朋友发一封邮件，user_to为'acaciama0903@gmail.com'，subject为'Hello'，user_pass为'blaxffzvxczfbfhh'，user_from为'912811339@qq.com'，message_text为'Hello, I am your friend.'"
+        #     "content": '请帮我查询下最近一封QQ邮箱的内容并解读它，user_email为"912811339@qq.com"，user_pass为"blaxffzvxczfbfhh"'
         # }
+        {
+            "role": "user",
+            "content": "我要使用QQ邮箱给我的朋友发一封邮件，user_to为'acaciama0903@gmail.com'，subject为'Hello'，user_pass为'blaxffzvxczfbfhh'，user_from为'912811339@qq.com'，message_text为'Hello, I am your friend.'"
+        }
     ]
     # 运行对话
     result = conv.run(functions_list=functions_list)
