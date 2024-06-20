@@ -6,7 +6,7 @@ from App.models import *
 from flask import request, make_response, json
 from flask_jwt_extended import jwt_required, get_jwt_identity
 from flask_restful import Resource
-from App.api.ocr_mix_instig import get_result
+from App.util.ocr_mix_instig import get_result
 basedir = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
 # 上传文件保存的路径,在当前文件的目录的上一级目录的upload文件夹下
 UPLOAD_FOLDER = os.path.join(basedir, 'upload')

@@ -7,4 +7,5 @@ app = create_app()
 #CBV是什么？类视图
 
 if __name__ == '__main__':
+    app.debug = True
     app.run()

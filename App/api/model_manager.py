@@ -1,10 +1,12 @@
-from flask import request, jsonify
+from pprint import pprint
+
+from flask import request
 from flask_jwt_extended import jwt_required, get_jwt_identity
 from flask_restful import Resource
 from datetime import datetime
-from App.api import SparkApi  # 引入之前提供的SparkApi模块
+from App.util import SparkApi
 from App.models import *
-
+from App.util import ChatConversation,functions_list
 
 # 全局变量，存储星火大模型的密钥信息和地址
 APPID = "fd0f6084"
@@ -54,23 +56,53 @@ class Chat(Resource):
         # 从请求中获取问题
         data = request.json
         input_text = data.get('text')
+        print('input_text:', input_text)
+        # [{'id': '1718875908317', 'text': '您好，我是您的AI智能助手，我会尽力帮助您解决问题。', 'type': 'system'},
+        #  {'id': '1718875908317', 'text': '给我大理的天气', 'type': 'user', 'role': '1'}]
+        # 将数组处理为大模型格式[
+        #         {
+        #             "role": "user",
+        #             "content": '请帮我查询下最近一封QQ邮箱的内容并解读它，user_email为"912811339@qq.com"，user_pass为"blaxffzvxczfbfhh"'
+        #         },
+        #         {
+        #             "role": "user",
+        #             "content": "我要使用QQ邮箱给我的朋友发一封邮件，user_to为'1743936315@qq.com'，subject为'Hello'，user_pass为'blaxffzvxczfbfhh'，user_from为'912811339@qq.com'，message_text为'Hello, I am your friend.'"
+        #         }
+        #     ]
+        message = []
+        for item in input_text:
+            message.append({"role": item["type"], "content": item["text"]})
+        print('message:', message)
         model_value = data.get('model')
         # 检查和更新聊天文本
         question = self.checklen(self.getText("user", input_text))
         # 清空上次的回答
         SparkApi.answer = ""
+        Chat_GLM3_answer = ""
         if model_value:
             # 调用星火大模型v1.5或v3.0
-            if model_value == "v1.5":
-                print("调用星火大模型v1.5")
-                SparkApi.main(app_id, api_key, api_secret, spark_url, domain, question)
-            elif model_value == "v3.0":
-                print("调用星火大模型v3.0")
-                SparkApi.main(app_id1, api_key1, api_secret1, spark_url1, domain1, question)
-            # 获取并记录助手的回答
-            self.getText("assistant", SparkApi.answer)
-            # 返回状态码和模型回答
-            return {"code": 0, "msg": "成功", "data": {"response": SparkApi.answer}}
+            if model_value == "v1.5" or model_value == "v3.0":
+                if model_value == "v1.5":
+                    print("调用星火大模型v1.5")
+                    SparkApi.main(app_id, api_key, api_secret, spark_url, domain, question)
+                elif model_value == "v3.0":
+                    print("调用星火大模型v3.0")
+                    SparkApi.main(app_id1, api_key1, api_secret1, spark_url1, domain1, question)
+                # 获取并记录助手的回答
+                self.getText("assistant", SparkApi.answer)
+                # 返回状态码和模型回答
+                return {"code": 0, "msg": "成功", "data": {"response": SparkApi.answer}}
+            if model_value == "glm-4" or model_value == "glm-4v" or model_value == "glm-3-turbo":
+                # 调用glm3模型
+                conv = ChatConversation(model = model_value)
+                conv.messages = message
+                Chat_GLM3_answer = conv.run(functions_list=functions_list)
+                if Chat_GLM3_answer == "":
+                    Chat_GLM3_answer = "对不起，我不知道该如何回答您的问题"
+                # 输出回答
+                print("Chat_GLM3_answer:", Chat_GLM3_answer)
+                # 返回状态码和模型回答
+                return {"code": 0, "msg": "成功", "data": {"response": Chat_GLM3_answer}}
         else:
             # 返回错误信息
             return {"code": 400, "msg": "模型参数错误,请选择模型版本"}
@@ -102,26 +134,42 @@ class ChatSessionResource(Resource):
     @jwt_required()
     def post(self):
         data = request.json
+        print(''.center(100, '-'))
+        print('data:', data)
+        print(''.center(100, '-'))
         # 创建并添加 ChatItemsModel 实例
-        model_id = 1
-        model_txt = data.get('model_id')
+        model_id = 3
+        model_txt = data.get('model')
         if model_txt == "v1.5":
             model_id = 1
         elif model_txt == "v3.0":
             model_id = 2
+        elif model_txt == "glm-4":
+            model_id = 3
+        elif model_txt == "glm-4v":
+            model_id = 4
+        elif model_txt == "glm-3-turbo":
+            model_id = 5
+        else:
+            return {"code": 400, "msg": "模型参数错误,请选择模型版本"}
+        # 添加 ChatItemsModel 实例
         new_session = ChatItemsModel(
             chat_id=data['chat_id'],
             username=data['username'],
             model_id=model_id,
             title=data.get('title'),
+            # 添加角色ID.从前端获取，如果没有则默认为1
+            role_id=data.get('content', 1),
         )
         db.session.add(new_session)
-        # 创建并添加 ChatHistoryModel 实例
+        # 根据role_id 添加初始化消息,从数据库中获取role_id对应的角色提示词
+        content = RoleModel.query.filter_by(id=new_session.role_id).first().content
         new_history = ChatHistoryModel(
             chat_id=data['chat_id'],
             username=data['username'],
-            type='init',  # 初始化消息类型为 'init'
-            Content='您好，我是科大讯飞研发的认知智能大模型，我的名字叫讯飞星火认知大模型。我可以和人类进行自然交流，解答问题，高效完成各领域认知智能需求。',  # 初始化消息内容
+            type='system',  # 消息类型为系统
+            Content= content,
+            # 初始化消息内容
             role='system',  # 消息角色为系统
             created_at=datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
             updated_at=datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -130,7 +178,9 @@ class ChatSessionResource(Resource):
         # 提交数据库变更
         db.session.commit()
         # 输出创建的会话信息
-        print(new_session)
+        print(''.center(100, '-'))
+        print('new_session:', new_session)
+        print('new_history:', new_history)
         # 返回成功响应
         return {"code": 0, "msg": "会话创建成功", "data": {"updatedAt": datetime.now().strftime("%Y-%m-%d %H:%M:%S")}}
 
@@ -165,12 +215,18 @@ class ChatHistoryResource(Resource):
     @jwt_required()
     def post(self, chat_id):
         data = request.json
-        print(data)
+        # 输出请求数据
+        print(''.center(100, '-'))
+        print('data:', data)
+        print(''.center(100, '-'))
         new_history = ChatHistoryModel(
             chat_id=data['id'],
             username=get_jwt_identity(),
+            # type 为消息类型，如'user'表示用户消息，'assistant'表示助手消息
             type=data['type'],
             Content=data['text'],
+            # role 为角色
+            role = data['role'],
             created_at=datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
             updated_at=datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         )

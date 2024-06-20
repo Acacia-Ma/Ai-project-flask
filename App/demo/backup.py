@@ -4,7 +4,7 @@ client_zhipu = ZhipuAI(api_key="dae4b7d3a476814fa8938ee5183045af.9UDOI9jvUOcpkHx
 from autofunctiongenerator import AutoFunctionGenerator
 import json
 import pandas as pd
-from functionsList import calculate_total_age_function, calculate_married_count, get_flight_number
+from App.util.functionsList import calculate_total_age_function, calculate_married_count, get_flight_number
 
 
 class ChatConversation:

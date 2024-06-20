@@ -1,4 +1,5 @@
-import SparkApi
+from App.util import SparkApi
+
 #以下密钥信息从控制台获取
 appid = "fd0f6084"     #填写控制台中获取的 APPID 信息
 api_secret = "MGY1NjdhYzExNmIwMGEzZWIwNWU1NjJi"   #填写控制台中获取的 APISecret 信息
@@ -43,9 +44,9 @@ if __name__ == '__main__':
     while(1):
         Input = input("\n" +"我:")
         question = checklen(getText("user",Input))
-        SparkApi.answer =""
+        SparkApi.answer = ""
         print("星火:",end = "")
-        SparkApi.main(appid,api_key,api_secret,Spark_url,domain,question)
-        getText("assistant",SparkApi.answer)
+        SparkApi.main(appid, api_key, api_secret, Spark_url, domain, question)
+        getText("assistant", SparkApi.answer)
         # print(str(text))
 

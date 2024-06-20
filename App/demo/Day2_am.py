@@ -3,10 +3,9 @@ from pprint import pprint
 from zhipuai import ZhipuAI
 
 client_zhipu = ZhipuAI(api_key="dae4b7d3a476814fa8938ee5183045af.9UDOI9jvUOcpkHx2")  # 你自己的api key
-from autofunctiongenerator import AutoFunctionGenerator
 import json
 import pandas as pd
-from functionsList import calculate_total_age_function, calculate_married_count, get_flight_number,fetch_latest_qqemail_content,send_email
+from App.util.functionsList import calculate_total_age_function, calculate_married_count, get_flight_number,fetch_latest_qqemail_content,send_email
 
 functions_dec = [
     {

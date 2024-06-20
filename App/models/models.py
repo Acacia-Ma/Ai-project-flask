@@ -25,6 +25,8 @@ class ChatItemsModel(db.Model):
     model_id = db.Column(db.Integer)
     # 聊天会话的标题
     title = db.Column(db.String(100))
+    # 角色的ID
+    role_id = db.Column(db.Integer)
 
 
 class ChatModels(db.Model):
@@ -39,6 +41,8 @@ class ChatModels(db.Model):
     value = db.Column(db.String(255), nullable=False)  # 模型值
     # 模型是否启用的标记
     enabled = db.Column(db.Boolean, nullable=False)  # 是否启用
+    # 模型的URL
+    url = db.Column(db.String(255), nullable=False)  # 模型URL
 
 
 class ChatHistoryModel(db.Model):
@@ -79,3 +83,28 @@ class TextImgModel(db.Model):
     content = db.Column(db.UnicodeText)
     # 图片的创建时间
     created_at = db.Column(db.String(100))
+
+class RoleModel(db.Model):
+    __tablename__ = "role"
+    # 主键，自增长的ID
+    id = db.Column(db.Integer, primary_key=True, autoincrement=True)
+    # 用户的角色
+    role = db.Column(db.String(50), nullable=False)
+    # 角色提示词
+    content = db.Column(db.UnicodeText)
+
+class DepartmentModel(db.Model):
+    __tablename__ = "department"
+    # 主键，自增长的ID
+    id = db.Column(db.Integer, primary_key=True, autoincrement=True)
+    # 部门的名称
+    department = db.Column(db.String(50), nullable=False)
+    # 部门的上级部门
+    parent_id = db.Column(db.Integer, nullable=False)
+    # 部门的创建时间
+    created_at = db.Column(db.String(100))
+    # 部门的唯一标识
+    department_id = db.Column(db.String(50), nullable=False)
+    # 组织机构代码
+    code = db.Column(db.String(50), nullable=False)
+
