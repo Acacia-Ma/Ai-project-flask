@@ -160,7 +160,7 @@ class ChatConversation:
     - run : 运行聊天会话并获取最终的对话结果(响应)
     """
 
-    def __init__(self, model):
+    def __init__(self, model="glm-4-0520"):
         """
         初始化 ChatConversation 类
         """
@@ -399,12 +399,22 @@ if __name__ == "__main__":
         {
             "role": "user",
             "content": '请帮我查询下最近一封QQ邮箱的内容并解读它，user_email为"912811339@qq.com"，user_pass为"blaxffzvxczfbfhh"'
-        },
-        {
-            "role": "user",
-            "content": "我要使用QQ邮箱给我的朋友发一封邮件，user_to为'1743936315@qq.com'，subject为'Hello'，user_pass为'blaxffzvxczfbfhh'，user_from为'912811339@qq.com'，message_text为'Hello, I am your friend.'"
         }
+        # {
+        #     "role": "user",
+        #     "content": "我要使用QQ邮箱给我的朋友发一封邮件，user_to为'1743936315@qq.com'，subject为'Hello'，user_pass为'blaxffzvxczfbfhh'，user_from为'912811339@qq.com'，message_text为'Hello, I am your friend.'"
+        # }
     ]
+    # conv.messages = [
+    #     {
+    #         "role": "system",
+    #         "content": '不要假设或猜测传入函数的参数值。如果用户的描述不明确，请要求用户提供必要信息。现在你是一位优秀的数据分析师, 根据用户传入的数据集来进行分析计算。'
+    #     },
+    #     {
+    #         "role": "user",
+    #         "content": '{"columns":["Name","Age","Salary","IsMarried"],"index":[0,1,2,3,4,5],"data":[["Tom",25,5000,true],["Jerry",22,6000,false],["Mickey",30,7000,true],["Minnie",28,8000,true],["Donald",35,9000,true],["Daisy",33,10000,false]]}'
+    #     }
+    # ]
     # 运行对话
     result = conv.run(functions_list=functions_list)
     print(''.center(100, '-'))

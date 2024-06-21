@@ -322,6 +322,7 @@ class ChatConversation:
     - run : 运行聊天会话并获取最终的对话结果(响应)
     """
 
+    # model = "glm-4" 说明这个类的model属性默认值是"glm-4"，可以通过实例化对象的时候传入参数来修改这个值
     def __init__(self, model="glm-4"):
         """
         初始化 ChatConversation 类

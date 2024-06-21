@@ -22,7 +22,7 @@ class ChatItemsModel(db.Model):
     # 用户的唯一标识
     username = db.Column(db.String(50), nullable=False)
     # 使用的模型ID
-    model_id = db.Column(db.Integer)
+    model_id = db.Column(db.String(40), nullable=False)
     # 聊天会话的标题
     title = db.Column(db.String(100))
     # 角色的ID
@@ -86,11 +86,11 @@ class TextImgModel(db.Model):
 
 class RoleModel(db.Model):
     __tablename__ = "role"
-    # 主键，自增长的ID
+    # 主键，自增长的ID，autoincrement 为自增长
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
-    # 用户的角色
+    # 用户的角色，字段长度为50
     role = db.Column(db.String(50), nullable=False)
-    # 角色提示词
+    # 角色提示词,UnicodeText 为可变长度的Unicode字符串
     content = db.Column(db.UnicodeText)
 
 class DepartmentModel(db.Model):

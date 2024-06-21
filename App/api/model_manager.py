@@ -92,17 +92,20 @@ class Chat(Resource):
                 self.getText("assistant", SparkApi.answer)
                 # 返回状态码和模型回答
                 return {"code": 0, "msg": "成功", "data": {"response": SparkApi.answer}}
-            if model_value == "glm-4" or model_value == "glm-4v" or model_value == "glm-3-turbo":
+            if model_value == "glm-4" or model_value == "glm-4-0520" or model_value == "glm-3-turbo":
                 # 调用glm3模型
                 conv = ChatConversation(model = model_value)
                 conv.messages = message
                 Chat_GLM3_answer = conv.run(functions_list=functions_list)
-                if Chat_GLM3_answer == "":
-                    Chat_GLM3_answer = "对不起，我不知道该如何回答您的问题"
+                # 如果大模型回答为空，或者回答为None
+                if Chat_GLM3_answer == "" or Chat_GLM3_answer is None:
+                    # 返回状态码 和 错误信息
+                    return {"code": 0, "msg": "成功", "data": {"response": "对不起，我不明白您的问题。"}}
                 # 输出回答
-                print("Chat_GLM3_answer:", Chat_GLM3_answer)
-                # 返回状态码和模型回答
-                return {"code": 0, "msg": "成功", "data": {"response": Chat_GLM3_answer}}
+                else:
+                    print("Chat_GLM3_answer:", Chat_GLM3_answer)
+                    # 返回状态码和模型回答
+                    return {"code": 0, "msg": "成功", "data": {"response": Chat_GLM3_answer}}
         else:
             # 返回错误信息
             return {"code": 400, "msg": "模型参数错误,请选择模型版本"}
@@ -145,11 +148,11 @@ class ChatSessionResource(Resource):
         elif model_txt == "v3.0":
             model_id = 2
         elif model_txt == "glm-4":
-            model_id = 3
-        elif model_txt == "glm-4v":
-            model_id = 4
+            model_id = 'glm-4'
+        elif model_txt == "glm-4-0520":
+            model_id = 'glm-4-0520'
         elif model_txt == "glm-3-turbo":
-            model_id = 5
+            model_id = 'glm-3-turbo'
         else:
             return {"code": 400, "msg": "模型参数错误,请选择模型版本"}
         # 添加 ChatItemsModel 实例
@@ -170,7 +173,7 @@ class ChatSessionResource(Resource):
             type='system',  # 消息类型为系统
             Content= content,
             # 初始化消息内容
-            role='system',  # 消息角色为系统
+            role= data.get('content'),
             created_at=datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
             updated_at=datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         )
@@ -241,6 +244,8 @@ class ChatHistoryResource(Resource):
         print("当前用户:", username)
         # 查询与该用户名相关联的聊天会话
         histories = ChatHistoryModel.query.filter_by(chat_id=chat_id).all()
+        # 查询与该用户名相关联的聊天会话使用的模型
+        session = ChatItemsModel.query.filter_by(chat_id=chat_id).first()
         history_data = [{
             'id': history.id,
             'chat_id': history.chat_id,
@@ -251,7 +256,8 @@ class ChatHistoryResource(Resource):
             'role': history.role,
             'use_context': history.use_context,
             'created_at': history.created_at,
-            'updated_at': history.updated_at
+            'updated_at': history.updated_at,
+            'model': session.model_id
         } for history in histories]
         # print(session_data)
         # return jsonify(session_data)
