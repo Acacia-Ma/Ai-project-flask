@@ -1,19 +1,21 @@
-from flask_restful import Resource,marshal_with,fields
+from flask_restful import Resource, marshal_with, fields
 from werkzeug.security import check_password_hash
-from flask_jwt_extended import create_access_token,create_refresh_token,jwt_required,get_jwt_identity,unset_jwt_cookies
+from flask_jwt_extended import create_access_token, create_refresh_token, jwt_required, get_jwt_identity, \
+    unset_jwt_cookies
 from flask import request, jsonify
 from App.models import *
 
 res = {
-    "msg":fields.String,
+    "msg": fields.String,
     # 状态码 200 201 202 204 400 401 403 404 405 500
-    "code":fields.Integer(default=200),
-    "url":fields.Url(endpoint="register",absolute=True)
+    "code": fields.Integer(default=200),
+    "url": fields.Url(endpoint="register", absolute=True)
 }
+
 
 class Login(Resource):
     # 添加一个注解，表示在get和post请求之前，先执行这个方法
-    #[]表示可以添加多个装饰器,装饰器的执行顺序是从上到下
+    # []表示可以添加多个装饰器,装饰器的执行顺序是从上到下
     # method_decorators = {"get":[marshal_with(res)],"post":[marshal_with(res)]}
     def post(self):
         # 获取表单数据
@@ -21,25 +23,32 @@ class Login(Resource):
         username = form_data.get('username')
         password = form_data.get('password')
         # 判断用户名和密码是否为空
-        print(username,password)
+        print(username, password)
         if username is None or password is None:
-            return {"msg":"拒绝登录！", "code": 400}
-        user = User.query.filter(User.username==username).first()
-        print(user.username,user.password)
+            return {"msg": "拒绝登录！", "code": 400}
+        user = User.query.filter(User.username == username).first()
+        print(user.username, user.password)
         if username == user.username and password == user.password:
             access_token = create_access_token(identity=username)
             refresh_token = create_refresh_token(identity=username)
-            return {'code': 0, 'msg': '登录成功', 'data': {'access_token': access_token, 'refresh_token': refresh_token, 'username': username}}
-        return {"msg":"拒绝登录！", "code": 400}
+            return {'code': 0, 'msg': '登录成功', 'data': {
+                'access_token': access_token,
+                'refresh_token': refresh_token,
+                'username': username,
+                "permission": user.permission}
+                    }
+        return {"msg": "拒绝登录！", "code": 400}
+
     # @marshal_with(res)
     def get(self):
-        return {"msg":"Success Login","code":200}
+        return {"msg": "Success Login", "code": 200}
 
 
 class Register(Resource):
     def get(self):
         payload = get_jwt_identity()
-        return {"msg":"注册成功","code":200,"payload":payload}
+        return {"msg": "注册成功", "code": 200, "payload": payload}
+
     # 注册
     def post(self):
         # 获取表单数据
@@ -50,18 +59,19 @@ class Register(Resource):
         print(form_data)
         # 检查真实姓名和密码是否为空
         if not realname or not password:
-            return {"msg":"真实姓名和密码不能为空","code":400}
+            return {"msg": "真实姓名和密码不能为空", "code": 400}
         # 创建用户对象
         user = User()
         user.username = username
         # 检查用户名是否存在
-        if User.query.filter(User.username==username).first():
-            return {"msg":"用户名已存在","code":400}
+        if User.query.filter(User.username == username).first():
+            return {"msg": "用户名已存在", "code": 400}
         user.realname = realname
         user.password = password
         db.session.add(user)
         db.session.commit()
-        return {"msg":"注册成功","code":0}
+        return {"msg": "注册成功", "code": 0}
+
 
 class RefreshToken(Resource):
     @jwt_required(refresh=True)
@@ -73,17 +83,19 @@ class RefreshToken(Resource):
         access_token = create_access_token(identity=username)
         return {'code': 0, 'msg': '刷新token成功', 'data': {'access_token': access_token}}
 
+
 class UserInfo(Resource):
     @jwt_required()
     def post(self):
         # 通过jwt获取用户信息
         username = get_jwt_identity()
-        current_user = User.query.filter(User.username==username).first()
-        print(current_user.username,current_user.realname)
-        return {"msg":"获取用户信息成功","code":0,"data":{
-            "username":current_user.username,
-            "realname":current_user.realname
+        current_user = User.query.filter(User.username == username).first()
+        print(current_user.username, current_user.realname)
+        return {"msg": "获取用户信息成功", "code": 0, "data": {
+            "username": current_user.username,
+            "realname": current_user.realname
         }}
+
 
 class EditUser(Resource):
     @jwt_required()
@@ -95,7 +107,7 @@ class EditUser(Resource):
         # 前端传过来的密码
         password = form_data.get('password')
         password_old = form_data.get('password_old')
-        print(username,realname,password,password_old)
+        print(username, realname, password, password_old)
         # 检查真实姓名和密码是否为空
         if not realname or not password:
             return {"msg": "真实姓名和原密码不能为空", "code": 400}
@@ -103,14 +115,16 @@ class EditUser(Resource):
         if password_old == password:
             return {"msg": "新密码不能和旧密码一致", "code": 400}
         # 数据库中的密码
-        user = User.query.filter(User.username==username).first()
+        user = User.query.filter(User.username == username).first()
         if user.password != password_old:
-            return {"msg":"原密码错误","code":400}
+            return {"msg": "原密码错误", "code": 400}
         else:
             user.password = password
             user.realname = realname
             db.session.commit()
-            return {"msg":"修改成功","code":0}
+            return {"msg": "修改成功", "code": 0}
+
+
 class Logout(Resource):
     @jwt_required()
     def post(self):
@@ -118,8 +132,6 @@ class Logout(Resource):
         username = get_jwt_identity()
         print(username)
         # 删除token
-        response = jsonify({"msg":"退出成功","code":0})
+        response = jsonify({"msg": "退出成功", "code": 0})
         unset_jwt_cookies(response)
-        return {"msg":"退出成功","code":0}
-
-
+        return {"msg": "退出成功", "code": 0}

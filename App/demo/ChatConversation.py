@@ -396,14 +396,18 @@ if __name__ == "__main__":
 
     conv = ChatConversation()
     conv.messages = [
-        {
-            "role": "user",
-            "content": '请帮我查询下最近一封QQ邮箱的内容并解读它，user_email为"912811339@qq.com"，user_pass为"blaxffzvxczfbfhh"'
-        }
+        # {
+        #     "role": "user",
+        #     "content": '请帮我查询下最近一封QQ邮箱的内容并解读它，user_email为"912811339@qq.com"，user_pass为"blaxffzvxczfbfhh"'
+        # }
         # {
         #     "role": "user",
         #     "content": "我要使用QQ邮箱给我的朋友发一封邮件，user_to为'1743936315@qq.com'，subject为'Hello'，user_pass为'blaxffzvxczfbfhh'，user_from为'912811339@qq.com'，message_text为'Hello, I am your friend.'"
         # }
+        {
+            "role":"user",
+            "content": '你好'
+        }
     ]
     # conv.messages = [
     #     {

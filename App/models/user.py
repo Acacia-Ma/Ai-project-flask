@@ -17,7 +17,16 @@ class User(db.Model):
     password = db.Column(db.String(255), nullable=False)
     # 个人头像图片名字，字符串类型，可为空
     img = db.Column(db.String(255), nullable=True)
-    # 所属组织名字，字符串类型，不可为空
+    # 所属组织ID，整数类型，可为空
+    department_id = db.Column(db.Integer, nullable=True)
+    # 用户权限，整数类型，不为空
+    permission = db.Column(db.Integer, nullable=False)
+    # 用户职位，字符串类型，不为空
+    position = db.Column(db.String(40), nullable=False)
+    # 用户工号，字符串类型，不为空
+    job_number = db.Column(db.String(40), nullable=False)
+    # 用户手机号，字符串类型，不为空
+    phone = db.Column(db.String(40), nullable=False)
 
 
 

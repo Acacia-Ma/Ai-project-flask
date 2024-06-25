@@ -100,11 +100,11 @@ class DepartmentModel(db.Model):
     # 部门的名称
     department = db.Column(db.String(50), nullable=False)
     # 部门的上级部门
-    parent_id = db.Column(db.Integer, nullable=False)
+    parent_id = db.Column(db.String(50), nullable=False)
     # 部门的创建时间
     created_at = db.Column(db.String(100))
     # 部门的唯一标识
     department_id = db.Column(db.String(50), nullable=False)
-    # 组织机构代码
-    code = db.Column(db.String(50), nullable=False)
+    # 组织机构代码，字符串类型，可为空
+    code = db.Column(db.String(50), nullable=True)
 
