@@ -73,7 +73,7 @@ class TextImgModel(db.Model):
     __tablename__='text_img'
     # 主键，自增长的ID
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
-
+    # 图片的唯一标识
     img_id = db.Column(db.String(200), nullable=False)
     # 用户的唯一标识
     username = db.Column(db.String(50))

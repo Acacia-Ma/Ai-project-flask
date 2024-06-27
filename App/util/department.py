@@ -13,7 +13,7 @@ def getParentLisDate(departs_infos):
                 "id": item.department_id,
                 "parent_id": item.parent_id,
                 "department_id": item.department_id,
-                "department": item.department,
+                "label": item.department,
                 "is_depart": True,
             }
             # 添加到父部门列表中
@@ -35,7 +35,7 @@ def dataTreeData(departs_infos, parent_infos):
                    "id": d_value.department_id,
                    "parent_id": d_value.parent_id,
                    "department_id": d_value.department_id,
-                   "department": d_value.department,
+                   "label": d_value.department,
                    "is_depart": True,
                }
                childrenArray.append(t_depart)

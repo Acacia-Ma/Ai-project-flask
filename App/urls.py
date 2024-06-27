@@ -27,3 +27,10 @@ api.add_resource(GetDepartment, '/getdepartment/')
 api.add_resource(EditDepart, '/editdepartment/')
 api.add_resource(DelDepart, '/deldepartment/')
 api.add_resource(DelPerson, '/delperson/')
+# Permission
+api.add_resource(Permission, '/permission/')
+# AddAdmin
+api.add_resource(AddAdmin, '/addadmin/')
+# DelAdmin
+api.add_resource(DelAdmin, '/deladmin/')
+
