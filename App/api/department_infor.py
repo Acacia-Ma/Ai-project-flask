@@ -35,49 +35,6 @@ class SubDepart(Resource):
             })
         return {"code": 0, "msg": "获取子部门信息成功", "data": data_list, }
 
-
-# 获取部门中的人员信息
-class GetPerson(Resource):
-    # 作用：获取部门人员信息
-    def post(self):
-        department_id = request.json.get('department_id', None)
-        print(''.center(100, '-'))
-        print("这里是获取部门人员信息")
-        print(f'department_id:{department_id}')
-        print(''.center(100, '-'))
-        list = User.query.filter_by(department_id=department_id).all()
-        data_list = []
-        for item in list:
-            data_list.append({
-                "userid": item.job_number,
-                "username": item.realname,
-                "department_id": item.department_id,
-                "phone": item.phone,
-                "position": item.position,
-            })
-        print(data_list)
-        return {"code": 0, "msg": "获取部门人员信息成功", "data": data_list}
-
-# 添加部门人员信息
-class AddDepartment(Resource):
-    # 作用：添加部门
-    def post(self):
-        department_id = request.json.get('department_id', None)
-        username = request.json.get('username', None)
-        userid = request.json.get('userid', None)
-        mobile = request.json.get('mobile', None)
-        if department_id is None or username is None or userid is None or mobile is None:
-            return {"code": 400, "msg": "信息不完整"}
-        # userid 要唯一，查询是否有重复
-        user = User.query.filter_by(job_number=userid).first()
-        if user:
-            return {"code": 400, "msg": "添加失败，用户ID已存在"}
-        password = '123456'
-        chat = User(username=userid, realname=username, password=password, img=None, department_id=department_id,
-                    permission=1, position='用户', job_number=userid, phone=mobile)
-        db.session.add(chat)
-        db.session.commit()
-        return {"code": 0, "msg": "添加部门成功","data":'用户'}
 # 添加部门，并生成部门ID（department_id）
 class AddDepart(Resource):
     # 作用：添加部门，并生成部门ID（department_id）
@@ -146,6 +103,72 @@ class DelDepart(Resource):
         except Exception as e:
             return {"code": 400, "msg": "删除部门失败"}
 
+# 获取部门中的人员信息
+class GetPerson(Resource):
+    # 作用：获取部门人员信息
+    def post(self):
+        department_id = request.json.get('department_id', None)
+        print(''.center(100, '-'))
+        print("这里是获取部门人员信息")
+        print(f'department_id:{department_id}')
+        print(''.center(100, '-'))
+        list = User.query.filter_by(department_id=department_id).all()
+        data_list = []
+        for item in list:
+            data_list.append({
+                "userid": item.job_number,
+                "username": item.realname,
+                "department_id": item.department_id,
+                "phone": item.phone,
+                "position": item.position,
+            })
+        print(data_list)
+        return {"code": 0, "msg": "获取部门人员信息成功", "data": data_list}
+
+# 添加部门人员信息
+class AddDepartment(Resource):
+    # 作用：添加部门
+    def post(self):
+        department_id = request.json.get('department_id', None)
+        username = request.json.get('username', None)
+        userid = request.json.get('userid', None)
+        mobile = request.json.get('mobile', None)
+        if department_id is None or username is None or userid is None or mobile is None:
+            return {"code": 400, "msg": "信息不完整"}
+        # userid 要唯一，查询是否有重复
+        user = User.query.filter_by(job_number=userid).first()
+        if user:
+            return {"code": 400, "msg": "添加失败，用户ID已存在"}
+        password = '123456'
+        chat = User(username=userid, realname=username, password=password, img=None, department_id=department_id,
+                    permission=1, position='用户', job_number=userid, phone=mobile)
+        db.session.add(chat)
+        db.session.commit()
+        return {"code": 0, "msg": "添加部门成功","data":'用户'}
+
+# 修改部门人员信息
+class EditPerson(Resource):
+    # 作用：修改部门人员信息
+    def post(self):
+        username = request.json.get('username', None)
+        userid = request.json.get('userid', None)
+        mobile = request.json.get('phone', None)
+        position = request.json.get('position', None)
+        print(''.center(100, '-'))
+        print(f'username:{username}, userid:{userid}, phone:{mobile}, position:{position}')
+        print(''.center(100, '-'))
+        try:
+            if username is None or userid is None or mobile is None or position is None:
+                return {"code": 400, "msg": "信息不完整"}
+            user = User.query.filter_by(job_number=userid).first()
+            user.realname = username
+            user.phone = mobile
+            user.position = position
+            db.session.commit()
+            return {"code": 0, "msg": "修改部门人员信息成功"}
+        except Exception as e:
+            return {"code": 400, "msg": "修改部门人员信息失败"}
+
 # 批量删除部门成员信息，使用department_id和userid字段
 class DelPerson(Resource):
     # 作用：删除部门成员信息
@@ -159,6 +182,7 @@ class DelPerson(Resource):
             return {"code": 0, "msg": "删除部门成员信息成功"}
         except Exception as e:
             return {"code": 400, "msg": "删除部门成员信息失败"}
+
 
 # 通讯录后台权限管理，使用User表的permission字段，100：超级管理员，1：普通用户
 class Permission(Resource):
