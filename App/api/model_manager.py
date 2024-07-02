@@ -1,41 +1,33 @@
 from pprint import pprint
-
-from flask import request
+from flask import request, jsonify
 from flask_jwt_extended import jwt_required, get_jwt_identity
 from flask_restful import Resource
 from datetime import datetime
 from App.util import SparkApi
 from App.models import *
 from App.util import ChatConversation,functions_list
+appid = "b9cc1250"     #填写控制台中获取的 APPID 信息
+api_secret = "NGYwYTI2ZTI2NDUzNGYyOTM3YTAwY2I3"   #填写控制台中获取的 APISecret 信息
+api_key ="ee8b60bd0bac6b49512773051053981c"    #填写控制台中获取的 APIKey 信息
 
-# 全局变量，存储星火大模型的密钥信息和地址
-APPID = "fd0f6084"
-API_SECRET = "MGY1NjdhYzExNmIwMGEzZWIwNWU1NjJi"
-API_KEY = "a7fc595758ba180b6de76c7fd4f51105"
-DOMAIN = "general"
-SPARK_URL = "ws://spark-api.xf-yun.com/v1.1/chat"
+domain = "generalv3.5"      # Max版本
+domain_pro = "generalv3"       # Pro版本
+domain_Lite = "general"         # Lite版本
+domain_Ultra = "4.0Ultra"        # 4.0超级版
 
-# 星火大模型v1.5
-app_id = "fd0f6084"
-api_secret = "MGY1NjdhYzExNmIwMGEzZWIwNWU1NjJi"
-api_key = "a7fc595758ba180b6de76c7fd4f51105"
-domain = "general"
-spark_url = "ws://spark-api.xf-yun.com/v1.1/chat"
-
-# 星火大模型v3.0
-app_id1 = "af076b92"
-api_secret1 = "NTkyYWUzMzQ5MmY2YmY0MjQyNWY5NGUy"
-api_key1 = "cb55e35a63d1c8c91bc5ce67e11c7cc5"
-domain1 = "generalv3"
-spark_url1 = "ws://spark-api.xf-yun.com/v3.1/chat"
-
+Spark_url_Max = "wss://spark-api.xf-yun.com/v3.5/chat"   # Max服务地址
+Spark_url_Pro = "wss://spark-api.xf-yun.com/v3.1/chat"  # Pro服务地址
+Spark_url_Lite = "wss://spark-api.xf-yun.com/v1.1/chat"  # Lite服务地址
+Spark_url_Ultra = "wss://spark-api.xf-yun.com/v4.0/chat"  # 4.0超级版服务地址
 # 对话功能，用于与前端交互
 class Chat(Resource):
     def __init__(self):
         self.text = []
 
     def getText(self, role, content):
-        jsoncon = {"role": role, "content": content}
+        jsoncon = {}
+        jsoncon["role"] = role
+        jsoncon["content"] = content
         self.text.append(jsoncon)
         return self.text
 
@@ -43,7 +35,8 @@ class Chat(Resource):
         length = 0
         for content in text:
             temp = content["content"]
-            length += len(temp)
+            leng = len(temp)
+            length += leng
         return length
 
     def checklen(self, text):
@@ -56,7 +49,7 @@ class Chat(Resource):
         # 从请求中获取问题
         data = request.json
         input_text = data.get('text')
-        print('input_text:', input_text)
+        # print('input_text:', input_text)
         # [{'id': '1718875908317', 'text': '您好，我是您的AI智能助手，我会尽力帮助您解决问题。', 'type': 'system'},
         #  {'id': '1718875908317', 'text': '给我大理的天气', 'type': 'user', 'role': '1'}]
         # 将数组处理为大模型格式[
@@ -75,23 +68,31 @@ class Chat(Resource):
         print('message:', message)
         model_value = data.get('model')
         # 检查和更新聊天文本
-        question = self.checklen(self.getText("user", input_text))
+        # question = self.checklen(self.getText("user", input_text))
         # 清空上次的回答
         SparkApi.answer = ""
         Chat_GLM3_answer = ""
         if model_value:
-            # 调用星火大模型v1.5或v3.0
-            if model_value == "v1.5" or model_value == "v3.0":
-                if model_value == "v1.5":
-                    print("调用星火大模型v1.5")
-                    SparkApi.main(app_id, api_key, api_secret, spark_url, domain, question)
-                elif model_value == "v3.0":
-                    print("调用星火大模型v3.0")
-                    SparkApi.main(app_id1, api_key1, api_secret1, spark_url1, domain1, question)
+            # 调用星火大模型Max|Pro|Lite|Ultra
+            if model_value == "Lite" or model_value == "Pro" or model_value == "Max" or model_value == "Ultra":
+                if model_value == "Lite":
+                    print("调用星火小模型")
+                    SparkApi.main(appid, api_key, api_secret, Spark_url_Lite, domain_Lite, message)
+                elif model_value == "Pro":
+                    print("调用星火大模型Pro")
+                    SparkApi.main(appid, api_key, api_secret, Spark_url_Pro, domain_pro, message)
+                elif model_value == "Max":
+                    print("调用星火大模型Max")
+                    SparkApi.main(appid, api_key, api_secret, Spark_url_Max, domain, message)
+                elif model_value == "Ultra":
+                    print("调用星火大模型Ultra")
+                    SparkApi.main(appid, api_key, api_secret, Spark_url_Ultra, domain_Ultra, message)
                 # 获取并记录助手的回答
                 self.getText("assistant", SparkApi.answer)
+                print(SparkApi.answer)
                 # 返回状态码和模型回答
                 return {"code": 0, "msg": "成功", "data": {"response": SparkApi.answer}}
+            # 千问大模型
             if model_value == "glm-4" or model_value == "glm-4-0520" or model_value == "glm-3-turbo":
                 # 调用glm3模型
                 conv = ChatConversation(model = model_value)
@@ -143,10 +144,14 @@ class ChatSessionResource(Resource):
         # 创建并添加 ChatItemsModel 实例
         model_id = 3
         model_txt = data.get('model')
-        if model_txt == "v1.5":
-            model_id = 1
-        elif model_txt == "v3.0":
-            model_id = 2
+        if model_txt == "Lite":
+            model_id = 'Lite'
+        elif model_txt == "Pro":
+            model_id = 'Pro'
+        elif model_txt == "Max":
+            model_id = 'Max'
+        elif model_txt == "Ultra":
+            model_id = 'Ultra'
         elif model_txt == "glm-4":
             model_id = 'glm-4'
         elif model_txt == "glm-4-0520":
@@ -192,9 +197,11 @@ class ChatSessionResource(Resource):
     def delete(self, chat_id):
         session = ChatItemsModel.query.filter_by(chat_id=chat_id).first()
         session_history = ChatHistoryModel.query.filter_by(chat_id=chat_id).all()
+        print(len(session_history))
         if session:
             for history in session_history:
                 db.session.delete(history)
+                db.session.commit()
             db.session.delete(session)
             db.session.commit()
             return {"code": 0, "msg": "会话删除成功"}
@@ -219,9 +226,9 @@ class ChatHistoryResource(Resource):
     def post(self, chat_id):
         data = request.json
         # 输出请求数据
-        print(''.center(100, '-'))
-        print('data:', data)
-        print(''.center(100, '-'))
+        # print(''.center(100, '-'))
+        # print('data:', data)
+        # print(''.center(100, '-'))
         new_history = ChatHistoryModel(
             chat_id=data['id'],
             username=get_jwt_identity(),
@@ -233,6 +240,9 @@ class ChatHistoryResource(Resource):
             created_at=datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
             updated_at=datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         )
+        print(''.center(100, '-'))
+        print('new_history:', new_history)
+        print(''.center(100, '-'))
         db.session.add(new_history)
         db.session.commit()
         return {"code": 0, "msg": "聊天记录保存成功", "data": {"id": new_history.id}}

@@ -150,9 +150,13 @@ class AddDepartment(Resource):
 class EditPerson(Resource):
     # 作用：修改部门人员信息
     def post(self):
+        # 成员名字
         username = request.json.get('username', None)
+        # 成员ID
         userid = request.json.get('userid', None)
+        # 成员电话
         mobile = request.json.get('phone', None)
+        # 成员职位
         position = request.json.get('position', None)
         print(''.center(100, '-'))
         print(f'username:{username}, userid:{userid}, phone:{mobile}, position:{position}')
@@ -160,10 +164,15 @@ class EditPerson(Resource):
         try:
             if username is None or userid is None or mobile is None or position is None:
                 return {"code": 400, "msg": "信息不完整"}
+            # 修改部门人员信息
             user = User.query.filter_by(job_number=userid).first()
+            # 修改部门人员信息
             user.realname = username
+            # 修改部门人员信息
             user.phone = mobile
+            # 修改部门人员信息
             user.position = position
+            # 提交
             db.session.commit()
             return {"code": 0, "msg": "修改部门人员信息成功"}
         except Exception as e:
