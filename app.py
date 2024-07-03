@@ -20,7 +20,6 @@ import hmac
 from urllib.parse import urlparse
 from wsgiref.handlers import format_date_time
 
-answer = ""
 sid = ''
 
 class Ws_Param(object):
@@ -85,64 +84,95 @@ def gen_params(appid, domain, question):
 appid = "b9cc1250"
 api_secret = "NGYwYTI2ZTI2NDUzNGYyOTM3YTAwY2I3"
 api_key = "ee8b60bd0bac6b49512773051053981c"
-Spark_url_Ultra = "wss://spark-api.xf-yun.com/v4.0/chat"
-domain_Ultra = "4.0Ultra"
 answer = ""
+domain_35 = "generalv3.5"      # Max版本
+domain_pro = "generalv3"       # Pro版本
+domain_Lite = "general"         # Lite版本
+domain_Ultra = "4.0Ultra"        # 4.0超级版
 
+Spark_url_Max = "wss://spark-api.xf-yun.com/v3.5/chat"   # Max服务地址
+Spark_url_Pro = "wss://spark-api.xf-yun.com/v3.1/chat"  # Pro服务地址
+Spark_url_Lite = "wss://spark-api.xf-yun.com/v1.1/chat"  # Lite服务地址
+Spark_url_Ultra = "wss://spark-api.xf-yun.com/v4.0/chat"  # 4.0超级版服务地址
 app = create_app()
 app.config['SECRET_KEY'] = 'secret!'
 socketio = SocketIO(app, cors_allowed_origins="*")
 
+Spark_url=''
+domain=''
 @app.route('/')
 def index():
     return render_template('index.html')
+
 @socketio.on('message')
 def handle_message(data):
+    global Spark_url
     sid = request.sid  # Get the session ID of the client
+    # print("Received message:", data)
+    # 前端传递的模型参数 : 'Lite', 'Pro', 'Max', 'Ultra
+    model = data["model"]
+    # 根据模型参数选择对应的Spark_url和domain
+    model_mapping = {
+        'Lite': (Spark_url_Lite, domain_Lite),
+        'Pro': (Spark_url_Pro, domain_pro),
+        'Max': (Spark_url_Max, domain_35),
+        'Ultra': (Spark_url_Ultra, domain_Ultra)
+    }
+    # 根据模型参数获取对应的Spark_url和domain
+    Spark_url, domain = model_mapping.get(model, (None, None))
+    print(f"正在使用{model}模型")
+    if Spark_url is None or domain is None:
+       # 如果模型参数不在model_mapping中，使用默认的Lite模型
+        Spark_url, domain = Spark_url_Lite, domain_Lite
+        print(f"大模型参数错误，使用默认的Lite模型")
+    # 前端传递的问题
+    message_text = data.get("text", "")
+    # 前端传递的问题
     message = []
-    for item in data:
+    for item in message_text:
         message.append({"role": item["type"], "content": item["text"]})
     # print("Received message:", message)
     # Run the spark API in a new thread without passing 'sid'
-    thread.start_new_thread(run_spark_api_thread, (appid, api_key, api_secret, Spark_url_Ultra, domain_Ultra, message, sid))
-def run_spark_api_thread(appid, api_key, api_secret, Spark_url_Ultra, domain_Ultra, message, sid):
+    thread.start_new_thread(run_spark_api_thread, (appid, api_key, api_secret, Spark_url, domain, message, sid))
+def run_spark_api_thread(appid, api_key, api_secret, Spark_url, domain, message, sid):
     # Pass 'sid' to the run_spark_api function
-    asyncio.run(run_spark_api(appid, api_key, api_secret, Spark_url_Ultra, domain_Ultra, message, sid))
+    asyncio.run(run_spark_api(appid, api_key, api_secret, Spark_url, domain, message, sid))
 
 
-async def run_spark_api(appid, api_key, api_secret, Spark_url_Ultra, domain_Ultra, message, sid):
-    wsParam = Ws_Param(appid, api_key, api_secret, Spark_url_Ultra)
+async def run_spark_api(appid, api_key, api_secret, Spark_url, domain, message, sid):
+    wsParam = Ws_Param(appid, api_key, api_secret, Spark_url)
     websocket.enableTrace(False)
     wsUrl = wsParam.create_url()
     async with websockets.connect(wsUrl) as ws:
-        data = json.dumps(gen_params(appid=appid, domain=domain_Ultra, question=message))
+        data = json.dumps(gen_params(appid=appid, domain=domain, question=message))
         await ws.send(data)
-        while True:
-            response = await ws.recv()
-            data = json.loads(response)
-            code = data['header']['code']
-            if code != 0:
-                print(f'请求错误: {code}, {data}')
-                socketio.emit('error', {'message': f'请求错误: {code}'}, room=sid)
-                break
-            else:
-                sid = data["header"]["sid"]
-                choices = data["payload"]["choices"]
-                status = choices["status"]
-                content = choices["text"][0]["content"]
-                # 发送每个部分的回答给前端，实现流式输出
-                # 控制台输出内容和状态
-                # print(content, end="")
-                # 发送回答给前端，状态也返回给前端
-                # socketio.emit('stream_message', {'answer': content})
-                socketio.emit('stream_message', {'answer': content, 'status': status})
+        try:
+            while True:
+                response = await ws.recv()
+                data = json.loads(response)
+                code = data['header']['code']
+                if code != 0:
+                    print(f'请求错误: {code}, {data}')
+                    socketio.emit('error', {'message': f'请求错误: {code}, {data}'})
+                    break
+                else:
+                    sid = data["header"]["sid"]
+                    choices = data["payload"]["choices"]
+                    status = choices["status"]
+                    content = choices["text"][0]["content"]
+                    # 发送每个部分的回答给前端，实现流式输出
+                    socketio.emit('stream_message', {'answer': content, 'status': status})
 
-                # if status == 2:
-                #     # 对话结束时发送结束信号
-                #     print('\n')
-                #     print("对话结束")
-                #     socketio.emit('stream_message', {'answer': '', 'status': 2})
-                #     break
+                    # 如果对话结束或者有其他结束条件，可以在这里处理
+                    if status == 2:
+                        break
+        except websockets.exceptions.ConnectionClosedOK:
+            # 正常关闭连接，不打印任何信息
+            pass
+        except Exception as e:
+            # 其他异常情况，打印错误信息
+            print(f'An error occurred: {e}')
+            socketio.emit('error', {'message': f'An error occurred: {e}'})
 @socketio.on('connect')
 def test_connect():
     print("Connected")

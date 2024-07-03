@@ -105,7 +105,7 @@ class DelDepart(Resource):
 
 # 获取部门中的人员信息
 class GetPerson(Resource):
-    # 作用：获取部门人员信息
+    # 作用：获取单前选中部门人员信息
     def post(self):
         department_id = request.json.get('department_id', None)
         print(''.center(100, '-'))
@@ -124,6 +124,40 @@ class GetPerson(Resource):
             })
         print(data_list)
         return {"code": 0, "msg": "获取部门人员信息成功", "data": data_list}
+
+# 递归获取部门人员信息，根据部门ID获取部门下所有人员信息,联合User表和Department表
+class GetPersonAll(Resource):
+    # 作用：获取部门下所有人员信息
+    def post(self):
+        department_id = request.json.get('department_id', None)
+        print(''.center(100, '-'))
+        print("这里是获取部门人员信息")
+        print(f'department_id:{department_id}')
+        print(''.center(100, '-'))
+        # 递归获取部门下所有人员信息
+        data_list = self.getPersonAll(department_id)
+        print(data_list)
+        return {"code": 0, "msg": "获取部门人员信息成功", "data": data_list}
+
+    # 递归获取部门下所有人员信息
+    def getPersonAll(self, department_id):
+        list = User.query.filter_by(department_id=department_id).all()
+        data_list = []
+        for item in list:
+            data_list.append({
+                "userid": item.job_number,
+                "username": item.realname,
+                "department_id": item.department_id,
+                "phone": item.phone,
+                "position": item.position,
+            })
+        # 获取子部门
+        depart = DepartmentModel.query.filter_by(parent_id=department_id).all()
+        for item in depart:
+            data_list += self.getPersonAll(item.department_id)
+        return data_list
+
+
 
 # 添加部门人员信息
 class AddDepartment(Resource):

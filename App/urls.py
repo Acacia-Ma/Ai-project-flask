@@ -35,5 +35,7 @@ api.add_resource(AddAdmin, '/addadmin/')
 # DelAdmin
 api.add_resource(DelAdmin, '/deladmin/')
 
+api.add_resource(GetPersonAll, '/getpersonall/')
+
 
 
