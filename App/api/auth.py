@@ -68,6 +68,7 @@ class Register(Resource):
             return {"msg": "用户名已存在", "code": 400}
         user.realname = realname
         user.password = password
+        user.department_id = 1
         db.session.add(user)
         db.session.commit()
         return {"msg": "注册成功", "code": 0}

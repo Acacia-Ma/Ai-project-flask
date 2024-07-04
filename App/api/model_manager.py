@@ -49,66 +49,34 @@ class Chat(Resource):
         # 从请求中获取问题
         data = request.json
         input_text = data.get('text')
-        # print('input_text:', input_text)
-        # [{'id': '1718875908317', 'text': '您好，我是您的AI智能助手，我会尽力帮助您解决问题。', 'type': 'system'},
-        #  {'id': '1718875908317', 'text': '给我大理的天气', 'type': 'user', 'role': '1'}]
-        # 将数组处理为大模型格式[
-        #         {
-        #             "role": "user",
-        #             "content": '请帮我查询下最近一封QQ邮箱的内容并解读它，user_email为"912811339@qq.com"，user_pass为"blaxffzvxczfbfhh"'
-        #         },
-        #         {
-        #             "role": "user",
-        #             "content": "我要使用QQ邮箱给我的朋友发一封邮件，user_to为'1743936315@qq.com'，subject为'Hello'，user_pass为'blaxffzvxczfbfhh'，user_from为'912811339@qq.com'，message_text为'Hello, I am your friend.'"
-        #         }
-        #     ]
-        message = []
-        for item in input_text:
-            message.append({"role": item["type"], "content": item["text"]})
-        print('message:', message)
+        model_mapping = {
+            'Lite': (Spark_url_Lite, domain_Lite),
+            'Pro': (Spark_url_Pro, domain_pro),
+            'Max': (Spark_url_Max, domain),
+            'Ultra': (Spark_url_Ultra, domain_Ultra),
+            'glm-4': 'glm-4',
+            'glm-4-0520': 'glm-4-0520',
+            'glm-3-turbo': 'glm-3-turbo'
+        }
+
         model_value = data.get('model')
-        # 检查和更新聊天文本
-        # question = self.checklen(self.getText("user", input_text))
-        # 清空上次的回答
-        SparkApi.answer = ""
-        Chat_GLM3_answer = ""
-        if model_value:
-            # 调用星火大模型Max|Pro|Lite|Ultra
-            if model_value == "Lite" or model_value == "Pro" or model_value == "Max" or model_value == "Ultra":
-                if model_value == "Lite":
-                    print("调用星火小模型")
-                    SparkApi.main(appid, api_key, api_secret, Spark_url_Lite, domain_Lite, message)
-                elif model_value == "Pro":
-                    print("调用星火大模型Pro")
-                    SparkApi.main(appid, api_key, api_secret, Spark_url_Pro, domain_pro, message)
-                elif model_value == "Max":
-                    print("调用星火大模型Max")
-                    SparkApi.main(appid, api_key, api_secret, Spark_url_Max, domain, message)
-                elif model_value == "Ultra":
-                    print("调用星火大模型Ultra")
-                    SparkApi.main(appid, api_key, api_secret, Spark_url_Ultra, domain_Ultra, message)
-                # 获取并记录助手的回答
+        message = [{"role": item["type"], "content": item["text"]} for item in input_text]
+
+        if model_value in model_mapping:
+            if isinstance(model_mapping[model_value], tuple):
+                print(f"调用星火大模型{model_value}")
+                SparkApi.main(appid, api_key, api_secret, *model_mapping[model_value], message)
                 self.getText("assistant", SparkApi.answer)
-                print(SparkApi.answer)
-                # 返回状态码和模型回答
                 return {"code": 0, "msg": "成功", "data": {"response": SparkApi.answer}}
-            # 千问大模型
-            if model_value == "glm-4" or model_value == "glm-4-0520" or model_value == "glm-3-turbo":
-                # 调用glm3模型
-                conv = ChatConversation(model = model_value)
+            else:
+                conv = ChatConversation(model=model_value)
                 conv.messages = message
                 Chat_GLM3_answer = conv.run(functions_list=functions_list)
-                # 如果大模型回答为空，或者回答为None
-                if Chat_GLM3_answer == "" or Chat_GLM3_answer is None:
-                    # 返回状态码 和 错误信息
+                if not Chat_GLM3_answer:
                     return {"code": 0, "msg": "成功", "data": {"response": "对不起，我不明白您的问题。"}}
-                # 输出回答
                 else:
-                    print("Chat_GLM3_answer:", Chat_GLM3_answer)
-                    # 返回状态码和模型回答
                     return {"code": 0, "msg": "成功", "data": {"response": Chat_GLM3_answer}}
         else:
-            # 返回错误信息
             return {"code": 400, "msg": "模型参数错误,请选择模型版本"}
 
 
@@ -143,22 +111,17 @@ class ChatSessionResource(Resource):
         print(''.center(100, '-'))
         # 创建并添加 ChatItemsModel 实例
         model_id = 3
-        model_txt = data.get('model')
-        if model_txt == "Lite":
-            model_id = 'Lite'
-        elif model_txt == "Pro":
-            model_id = 'Pro'
-        elif model_txt == "Max":
-            model_id = 'Max'
-        elif model_txt == "Ultra":
-            model_id = 'Ultra'
-        elif model_txt == "glm-4":
-            model_id = 'glm-4'
-        elif model_txt == "glm-4-0520":
-            model_id = 'glm-4-0520'
-        elif model_txt == "glm-3-turbo":
-            model_id = 'glm-3-turbo'
-        else:
+        model_mapping = {
+            'Lite': 'Lite',
+            'Pro': 'Pro',
+            'Max': 'Max',
+            'Ultra': 'Ultra',
+            'glm-4': 'glm-4',
+            'glm-4-0520': 'glm-4-0520',
+            'glm-3-turbo': 'glm-3-turbo'
+        }
+        model_id = model_mapping.get(data.get('model'))
+        if model_id is None:
             return {"code": 400, "msg": "模型参数错误,请选择模型版本"}
         # 添加 ChatItemsModel 实例
         new_session = ChatItemsModel(
@@ -225,10 +188,6 @@ class ChatHistoryResource(Resource):
     @jwt_required()
     def post(self, chat_id):
         data = request.json
-        # 输出请求数据
-        # print(''.center(100, '-'))
-        # print('data:', data)
-        # print(''.center(100, '-'))
         new_history = ChatHistoryModel(
             chat_id=data['id'],
             username=get_jwt_identity(),
@@ -269,6 +228,4 @@ class ChatHistoryResource(Resource):
             'updated_at': history.updated_at,
             'model': session.model_id
         } for history in histories]
-        # print(session_data)
-        # return jsonify(session_data)
         return {"code": 0, "msg": "成功获取到所有聊天记录", "data": history_data}
